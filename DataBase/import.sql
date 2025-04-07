@@ -47,65 +47,6 @@ CREATE TABLE csvs.teams_data(
 
 \COPY csvs.teams_data(Team,Age,MP,Starts,Min,ninetys,Gls,Ast,PK,CrdY,CrdR,xG,npxG,xAG,PrgC,PrgP) FROM '/home/carlitos/PremierStat/teams.csv' DELIMITER ',' HEADER CSV;
 
---note change this block into a function call
---alter block begin
-ALTER TABLE csvs.players_data
-ALTER COLUMN Age TYPE INT USING (Age::REAL::INT);
-
-ALTER TABLE csvs.players_data
-ALTER COLUMN MP TYPE INT USING (MP::INT);
-
-ALTER TABLE csvs.players_data
-ALTER COLUMN Starts TYPE INT USING (Starts::INT);
-
-ALTER TABLE csvs.players_data
-ALTER COLUMN Min TYPE REAL;
-
-ALTER TABLE csvs.players_data
-ALTER COLUMN ninetys TYPE REAL;
-
-ALTER TABLE csvs.players_data
-ALTER COLUMN gls TYPE INT USING (gls::REAL::INT);
-
-ALTER TABLE csvs.players_data
-ALTER COLUMN ast TYPE INT USING (ast::REAL::INT);
-
-ALTER TABLE csvs.players_data
-ALTER COLUMN pk TYPE INT USING (pk::REAL::INT);
-
-ALTER TABLE csvs.players_data
-ALTER COLUMN crdy TYPE INT USING (crdy::REAL::INT);
-
-ALTER TABLE csvs.players_data
-ALTER COLUMN crdr TYPE INT USING (crdr::REAL::INT);
-
-ALTER TABLE csvs.players_data
-ALTER COLUMN xg TYPE REAL USING (xg::REAL);
-
-ALTER TABLE csvs.players_data
-ALTER COLUMN npxg TYPE REAL USING (npxG::REAL);
-
-ALTER TABLE csvs.players_data
-ALTER COLUMN xag TYPE REAL USING (xag::REAL);
-
---check weather prgc includes decimal values or not
-SELECT prgc FROM csvs.players_data
-WHERE prgc ~ '[0-9]+\.[1-9]+';
-
-ALTER TABLE csvs.players_data
-ALTER COLUMN prgc TYPE INT USING (prgc::REAL::INT);
-
---check weather prgp includes decimal values or not
-
-SELECT prgp FROM csvs.players_data
-WHERE prgp ~ '[0-9]+\.[1-9]+';
-
-ALTER TABLE csvs.players_data
-ALTER COLUMN prgp TYPE INT USING (prgp::REAL::INT);
-
---alter block end
-
-
 --altering squads column types
 --testing function to alter data types
 CREATE OR REPLACE FUNCTION alter_columns_to_type(
@@ -171,3 +112,25 @@ SELECT alter_columns_to_type(
            'prgp,BIGINT'
            ]
        );
+
+SELECT alter_columns_to_type(
+            'csvs.players_data',
+    ARRAY [
+        'age,INT',
+        'mp,INT',
+        'starts,INT',
+        'min,REAL',
+        'ninetys,REAL',
+        'gls,INT',
+        'ast,INT',
+        'pk,INT',
+        'crdy,INT',
+        'crdr,INT',
+        'xg,REAL',
+        'npxg,REAL',
+        'xag,REAL',
+        'prgc,INT',
+        'prgp,INT'
+        ]
+    );
+
