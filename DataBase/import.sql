@@ -2,7 +2,7 @@ DROP SCHEMA IF EXISTS csvs CASCADE;
 CREATE SCHEMA csvs;
 
 CREATE TABLE csvs.players_data(
-    Player TEXT,
+    name TEXT,
     Nation TEXT,
     Pos TEXT,
     Age TEXT,
@@ -24,7 +24,7 @@ CREATE TABLE csvs.players_data(
 );
 
 CREATE TABLE csvs.teams_data(
-    Team TEXT,
+    name TEXT,
     Age TEXT,
     MP TEXT,
     Starts TEXT,
@@ -43,9 +43,9 @@ CREATE TABLE csvs.teams_data(
 
 );
 
-\COPY csvs.players_data(Player, Nation, Pos, Age, MP, Starts, Min, ninetys, Gls, Ast, PK, CrdY, CrdR, xG, npxG, xAG, PrgC, PrgP, Team) FROM '/home/carlitos/PremierStat/players.csv' DELIMITER ',' HEADER CSV;
+\COPY csvs.players_data(name, Nation, Pos, Age, MP, Starts, Min, ninetys, Gls, Ast, PK, CrdY, CrdR, xG, npxG, xAG, PrgC, PrgP, Team) FROM '/home/carlitos/PremierStat/players.csv' DELIMITER ',' HEADER CSV;
 
-\COPY csvs.teams_data(Team,Age,MP,Starts,Min,ninetys,Gls,Ast,PK,CrdY,CrdR,xG,npxG,xAG,PrgC,PrgP) FROM '/home/carlitos/PremierStat/teams.csv' DELIMITER ',' HEADER CSV;
+\COPY csvs.teams_data(name,Age,MP,Starts,Min,ninetys,Gls,Ast,PK,CrdY,CrdR,xG,npxG,xAG,PrgC,PrgP) FROM '/home/carlitos/PremierStat/teams.csv' DELIMITER ',' HEADER CSV;
 
 --altering squads column types
 --testing function to alter data types
@@ -134,4 +134,9 @@ SELECT alter_columns_to_type(
         ]
     );
 
-SELECT * FROM csvs.players_data;
+
+ALTER TABLE csvs.players_data
+ADD CONSTRAINT player_pk PRIMARY KEY (name);
+
+ALTER TABLE csvs.teams_data
+ADD CONSTRAINT team_pk PRIMARY KEY (name);
