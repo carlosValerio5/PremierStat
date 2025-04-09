@@ -134,3 +134,4 @@ SELECT alter_columns_to_type(
         ]
     );
 
+SELECT * FROM csvs.players_data;
