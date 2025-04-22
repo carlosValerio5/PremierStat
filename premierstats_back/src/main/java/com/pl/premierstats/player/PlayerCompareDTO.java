@@ -6,46 +6,42 @@ package com.pl.premierstats.player;
  * This design pattern is useful to show different data in the same response
  * it allows giving different views to the same data
  */
-public class PlayerCompareDTO {
+public record PlayerCompareDTO(
 
-    //Player Information
-    private String playerName;
-    private String teamName;
-    private String nation;
-    private String position;
-    private Integer age;
+        //Player Information
+        String playerName,
+        String teamName,
+        String nation,
+        String position,
+        Integer age,
 
-    //Player statistics
-    private Integer minutesPlayed;
-    private Double ninetys;
-    private Integer matchesPlayed;
-    private Double xg; //expected goals
-    private Double npxg; //non-penalty expected goals
-    private Integer gls;
-    private Integer ast;
-    private Double xag; //expected assist goals
+        //Player statistics
+        Integer minutesPlayed,
+        Double xg, //expected goals
+        Double npxg, //non-penalty expected goals
+        Integer gls,
+        Integer ast,
+        Double xag, //expected assist goals
 
-    //Stats per 90 minutes
-    private Double glsPerNinety;
-    private Double astPerNinety;
-    private Double xagPerNinety;
-    private Double xgPerNinety;
-    private Double npxgPerNinety;
+        //Stats per 90 minutes
+        Double glsPerNinety,
+        Double astPerNinety,
+        Double xagPerNinety,
+        Double xgPerNinety,
+        Double npxgPerNinety,
 
-    //Progression
-    private Integer progressiveCarries; //Progression carries
-    private Integer progressivePasses; //Progression passes
+        //Progression
+        Integer progressiveCarries, //Progression carries
+        Integer progressivePasses, //Progression passes
 
-    //Progression per 90 minutes
-    private Double progressiveCarriesPerNinety;
-    private Double progressivePassesPerNinety;
+        //Progression per 90 minutes
+        Double progressiveCarriesPerNinety,
+        Double progressivePassesPerNinety,
 
-    //Efficiency stats
-    private Double goalEfficiency;
-    private Double assistEfficiency;
+        //Efficiency stats
+        Double goalEfficiency,
+        Double assistEfficiency,
 
-    // Individual player score to measure impact on the field
-    private Double impact;
-
-
-}
+        // Individual player score to measure impact on the field
+        //Double impact don't know how to calculate this yet
+) {}
