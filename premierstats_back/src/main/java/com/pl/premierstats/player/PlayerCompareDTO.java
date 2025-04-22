@@ -40,7 +40,7 @@ public record PlayerCompareDTO(
 
         //Efficiency stats
         Double goalEfficiency,
-        Double assistEfficiency,
+        Double assistEfficiency
 
         // Individual player score to measure impact on the field
         //Double impact don't know how to calculate this yet

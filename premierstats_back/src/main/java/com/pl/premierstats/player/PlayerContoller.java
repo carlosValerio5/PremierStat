@@ -68,3 +68,13 @@ public class PlayerContoller {
         return new ResponseEntity<>("Player deleted successfully", HttpStatus.OK);
     }
 }
+
+
+/**
+ * I want to add a comparison endpoint
+ *
+ * Questions:
+ * How should the data be formated or structured so the comparison can be done
+ * should i create another class to expose the new endpoint?
+ * should i add a new table to store the comparison data?
+ */
