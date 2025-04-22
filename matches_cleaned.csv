@@ -1,0 +1,381 @@
+id,Wk,Day,Date,Time,Home,xG,Score,xG.1,Away,Attendance,Venue,Referee,Result
+0,1.0,Fri,2023-08-11,20:00,Burnley,0.3,0–3,1.9,Manchester City,21572.0,Turf Moor,Craig Pawson,A
+1,1.0,Sat,2023-08-12,12:30,Arsenal,0.8,2–1,1.2,Nott'ham Forest,59984.0,Emirates Stadium,Michael Oliver,H
+2,1.0,Sat,2023-08-12,15:00,Everton,2.7,0–1,1.5,Fulham,39940.0,Goodison Park,Stuart Attwell,A
+3,1.0,Sat,2023-08-12,15:00,Brighton,4.0,4–1,1.5,Luton Town,31872.0,The American Express Community Stadium,David Coote,H
+4,1.0,Sat,2023-08-12,15:00,Sheffield Utd,0.5,0–1,1.9,Crystal Palace,31194.0,Bramall Lane,John Brooks,A
+5,1.0,Sat,2023-08-12,15:00,Bournemouth,1.3,1–1,1.1,West Ham,11245.0,Vitality Stadium,Peter Bankes,T
+6,1.0,Sat,2023-08-12,17:30,Newcastle Utd,3.3,5–1,1.8,Aston Villa,52207.0,St James' Park,Andy Madley,H
+7,1.0,Sun,2023-08-13,14:00,Brentford,2.2,2–2,1.3,Tottenham,17066.0,Gtech Community Stadium,Robert Jones,T
+8,1.0,Sun,2023-08-13,16:30,Chelsea,1.4,1–1,1.3,Liverpool,40096.0,Stamford Bridge,Anthony Taylor,T
+9,1.0,Mon,2023-08-14,20:00,Manchester Utd,2.2,1–0,2.2,Wolves,73358.0,Old Trafford,Simon Hooper,H
+10,2.0,Fri,2023-08-18,19:45,Nott'ham Forest,1.4,2–1,0.5,Sheffield Utd,29432.0,The City Ground,Peter Bankes,H
+11,2.0,Sat,2023-08-19,15:00,Wolves,2.1,1–4,2.2,Brighton,31317.0,Molineux Stadium,Andy Madley,A
+12,2.0,Sat,2023-08-19,15:00,Fulham,0.5,0–3,3.7,Brentford,24236.0,Craven Cottage,Darren Bond,A
+13,2.0,Sat,2023-08-19,15:00,Liverpool,3.0,3–1,1.3,Bournemouth,53145.0,Anfield,Thomas Bramall,H
+14,2.0,Sat,2023-08-19,17:30,Tottenham,1.7,2–0,2.1,Manchester Utd,61910.0,Tottenham Hotspur Stadium,Michael Oliver,H
+15,2.0,Sat,2023-08-19,20:00,Manchester City,1.0,1–0,0.3,Newcastle Utd,53419.0,Etihad Stadium,Robert Jones,H
+16,2.0,Sun,2023-08-20,14:00,Aston Villa,2.9,4–0,0.6,Everton,41694.0,Villa Park,Anthony Taylor,H
+17,2.0,Sun,2023-08-20,16:30,West Ham,1.8,3–1,2.5,Chelsea,62451.0,London Stadium,John Brooks,H
+18,2.0,Mon,2023-08-21,20:00,Crystal Palace,1.0,0–1,2.0,Arsenal,24189.0,Selhurst Park,David Coote,A
+19,3.0,Fri,2023-08-25,20:00,Chelsea,2.2,3–0,0.4,Luton Town,39893.0,Stamford Bridge,Robert Jones,H
+20,3.0,Sat,2023-08-26,12:30,Bournemouth,0.7,0–2,2.1,Tottenham,10567.0,Vitality Stadium,Tim Robinson,A
+21,3.0,Sat,2023-08-26,15:00,Everton,1.3,0–1,1.1,Wolves,38851.0,Goodison Park,Craig Pawson,A
+22,3.0,Sat,2023-08-26,15:00,Manchester Utd,2.8,3–2,1.2,Nott'ham Forest,73595.0,Old Trafford,Stuart Attwell,H
+23,3.0,Sat,2023-08-26,15:00,Brentford,1.0,1–1,0.8,Crystal Palace,16997.0,Gtech Community Stadium,Peter Bankes,T
+24,3.0,Sat,2023-08-26,15:00,Arsenal,3.2,2–2,0.6,Fulham,59961.0,Emirates Stadium,Paul Tierney,T
+25,3.0,Sat,2023-08-26,17:30,Brighton,1.5,1–3,3.0,West Ham,31508.0,The American Express Community Stadium,Anthony Taylor,A
+26,3.0,Sun,2023-08-27,14:00,Sheffield Utd,0.7,1–2,3.5,Manchester City,31336.0,Bramall Lane,Jarred Gillett,A
+27,3.0,Sun,2023-08-27,14:00,Burnley,0.7,1–3,2.5,Aston Villa,21591.0,Turf Moor,Michael Salisbury,A
+28,3.0,Sun,2023-08-27,16:30,Newcastle Utd,2.0,1–2,0.9,Liverpool,52214.0,St James' Park,John Brooks,A
+29,4.0,Fri,2023-09-01,20:00,Luton Town,1.4,1–2,1.0,West Ham,10802.0,Kenilworth Road Stadium,Paul Tierney,A
+30,4.0,Sat,2023-09-02,12:30,Sheffield Utd,1.2,2–2,2.5,Everton,31124.0,Bramall Lane,Andy Madley,T
+31,4.0,Sat,2023-09-02,15:00,Brentford,2.9,2–2,2.1,Bournemouth,16973.0,Gtech Community Stadium,Robert Madley,T
+32,4.0,Sat,2023-09-02,15:00,Manchester City,2.2,5–1,1.4,Fulham,52899.0,Etihad Stadium,Michael Oliver,H
+33,4.0,Sat,2023-09-02,15:00,Chelsea,2.3,0–1,0.8,Nott'ham Forest,39820.0,Stamford Bridge,Tim Robinson,A
+34,4.0,Sat,2023-09-02,15:00,Burnley,1.3,2–5,2.2,Tottenham,21750.0,Turf Moor,Darren England,A
+35,4.0,Sat,2023-09-02,17:30,Brighton,1.3,3–1,1.2,Newcastle Utd,31620.0,The American Express Community Stadium,Stuart Attwell,H
+36,4.0,Sun,2023-09-03,14:00,Crystal Palace,2.1,3–2,1.2,Wolves,24741.0,Selhurst Park,Robert Jones,H
+37,4.0,Sun,2023-09-03,14:00,Liverpool,2.5,3–0,0.7,Aston Villa,50109.0,Anfield,Simon Hooper,H
+38,4.0,Sun,2023-09-03,16:30,Arsenal,2.3,3–1,0.9,Manchester Utd,60192.0,Emirates Stadium,Anthony Taylor,H
+39,5.0,Sat,2023-09-16,12:30,Wolves,0.6,1–3,2.5,Liverpool,31257.0,Molineux Stadium,Michael Oliver,A
+40,5.0,Sat,2023-09-16,15:00,Tottenham,2.1,2–1,0.7,Sheffield Utd,61706.0,Tottenham Hotspur Stadium,Peter Bankes,H
+41,5.0,Sat,2023-09-16,15:00,West Ham,0.9,1–3,3.6,Manchester City,62475.0,London Stadium,Andy Madley,A
+42,5.0,Sat,2023-09-16,15:00,Aston Villa,3.0,3–1,1.2,Crystal Palace,40809.0,Villa Park,Darren England,H
+43,5.0,Sat,2023-09-16,15:00,Fulham,1.0,1–0,1.1,Luton Town,24467.0,Craven Cottage,Michael Salisbury,H
+44,5.0,Sat,2023-09-16,15:00,Manchester Utd,1.0,1–3,1.7,Brighton,73592.0,Old Trafford,Jarred Gillett,A
+45,5.0,Sat,2023-09-16,17:30,Newcastle Utd,1.4,1–0,0.5,Brentford,51670.0,St James' Park,Craig Pawson,H
+46,5.0,Sun,2023-09-17,14:00,Bournemouth,1.0,0–0,1.8,Chelsea,10421.0,Vitality Stadium,David Coote,T
+47,5.0,Sun,2023-09-17,16:30,Everton,0.3,0–1,1.0,Arsenal,39217.0,Goodison Park,Simon Hooper,A
+48,5.0,Mon,2023-09-18,19:45,Nott'ham Forest,0.7,1–1,0.5,Burnley,28958.0,The City Ground,Robert Jones,T
+49,6.0,Sat,2023-09-23,15:00,Luton Town,2.1,1–1,0.6,Wolves,10893.0,Kenilworth Road Stadium,Joshua Smith,T
+50,6.0,Sat,2023-09-23,15:00,Manchester City,1.3,2–0,1.0,Nott'ham Forest,53413.0,Etihad Stadium,Anthony Taylor,H
+51,6.0,Sat,2023-09-23,15:00,Crystal Palace,0.3,0–0,0.6,Fulham,25072.0,Selhurst Park,Paul Tierney,T
+52,6.0,Sat,2023-09-23,17:30,Brentford,1.0,1–3,1.9,Everton,16981.0,Gtech Community Stadium,Michael Oliver,A
+53,6.0,Sat,2023-09-23,20:00,Burnley,1.1,0–1,1.0,Manchester Utd,21593.0,Turf Moor,Tony Harrington,A
+54,6.0,Sun,2023-09-24,14:00,Chelsea,1.3,0–1,1.0,Aston Villa,39700.0,Stamford Bridge,Jarred Gillett,A
+55,6.0,Sun,2023-09-24,14:00,Arsenal,1.8,2–2,1.4,Tottenham,60156.0,Emirates Stadium,Robert Jones,T
+56,6.0,Sun,2023-09-24,14:00,Liverpool,3.0,3–1,1.1,West Ham,50136.0,Anfield,Chris Kavanagh,H
+57,6.0,Sun,2023-09-24,14:00,Brighton,1.9,3–1,1.1,Bournemouth,31617.0,The American Express Community Stadium,John Brooks,H
+58,6.0,Sun,2023-09-24,16:30,Sheffield Utd,0.9,0–8,3.9,Newcastle Utd,31127.0,Bramall Lane,Stuart Attwell,A
+59,7.0,Sat,2023-09-30,12:30,Aston Villa,1.6,6–1,1.7,Brighton,40636.0,Villa Park,Andy Madley,H
+60,7.0,Sat,2023-09-30,15:00,Manchester Utd,1.3,0–1,0.9,Crystal Palace,73428.0,Old Trafford,Chris Kavanagh,A
+61,7.0,Sat,2023-09-30,15:00,Wolves,0.4,2–1,0.9,Manchester City,31415.0,Molineux Stadium,Craig Pawson,H
+62,7.0,Sat,2023-09-30,15:00,West Ham,2.1,2–0,1.1,Sheffield Utd,62459.0,London Stadium,Graham Scott,H
+63,7.0,Sat,2023-09-30,15:00,Bournemouth,0.6,0–4,3.4,Arsenal,11193.0,Vitality Stadium,Michael Salisbury,A
+64,7.0,Sat,2023-09-30,15:00,Newcastle Utd,3.1,2–0,0.6,Burnley,51687.0,St James' Park,Thomas Bramall,H
+65,7.0,Sat,2023-09-30,15:00,Everton,2.9,1–2,0.9,Luton Town,39289.0,Goodison Park,Anthony Taylor,A
+66,7.0,Sat,2023-09-30,17:30,Tottenham,2.2,2–1,1.3,Liverpool,62001.0,Tottenham Hotspur Stadium,Simon Hooper,H
+67,7.0,Sun,2023-10-01,14:00,Nott'ham Forest,0.5,1–1,1.6,Brentford,29004.0,The City Ground,Paul Tierney,T
+68,7.0,Mon,2023-10-02,20:00,Fulham,1.1,0–2,1.7,Chelsea,24445.0,Craven Cottage,Tim Robinson,A
+69,2.0,Tue,2023-10-03,19:30,Luton Town,1.3,1–2,1.1,Burnley,10918.0,Kenilworth Road Stadium,Peter Bankes,A
+70,8.0,Sat,2023-10-07,12:30,Luton Town,0.8,0–1,1.9,Tottenham,10290.0,Kenilworth Road Stadium,John Brooks,A
+71,8.0,Sat,2023-10-07,15:00,Burnley,0.7,1–4,1.9,Chelsea,21654.0,Turf Moor,Stuart Attwell,A
+72,8.0,Sat,2023-10-07,15:00,Manchester Utd,1.4,2–1,0.9,Brentford,73453.0,Old Trafford,Andy Madley,H
+73,8.0,Sat,2023-10-07,15:00,Everton,2.4,3–0,0.7,Bournemouth,38815.0,Goodison Park,David Coote,H
+74,8.0,Sat,2023-10-07,15:00,Fulham,2.2,3–1,0.6,Sheffield Utd,24361.0,Craven Cottage,Samuel Barrott,H
+75,8.0,Sat,2023-10-07,17:30,Crystal Palace,0.8,0–0,1.0,Nott'ham Forest,25017.0,Selhurst Park,Craig Pawson,T
+76,8.0,Sun,2023-10-08,14:00,West Ham,1.2,2–2,2.0,Newcastle Utd,62473.0,London Stadium,Peter Bankes,T
+77,8.0,Sun,2023-10-08,14:00,Wolves,1.7,1–1,1.6,Aston Villa,31425.0,Molineux Stadium,Robert Jones,T
+78,8.0,Sun,2023-10-08,14:00,Brighton,2.3,2–2,2.3,Liverpool,31752.0,The American Express Community Stadium,Anthony Taylor,T
+79,8.0,Sun,2023-10-08,16:30,Arsenal,0.4,1–0,0.5,Manchester City,60233.0,Emirates Stadium,Michael Oliver,H
+80,9.0,Sat,2023-10-21,12:30,Liverpool,2.2,2–0,0.1,Everton,50201.0,Anfield,Craig Pawson,H
+81,9.0,Sat,2023-10-21,15:00,Brentford,3.1,3–0,1.1,Burnley,17029.0,Gtech Community Stadium,Joshua Smith,H
+82,9.0,Sat,2023-10-21,15:00,Nott'ham Forest,2.9,2–2,1.7,Luton Town,29361.0,The City Ground,Samuel Barrott,T
+83,9.0,Sat,2023-10-21,15:00,Bournemouth,0.6,1–2,2.4,Wolves,11175.0,Vitality Stadium,Paul Tierney,A
+84,9.0,Sat,2023-10-21,15:00,Newcastle Utd,2.4,4–0,1.2,Crystal Palace,52189.0,St James' Park,Tim Robinson,H
+85,9.0,Sat,2023-10-21,15:00,Manchester City,0.8,2–1,0.8,Brighton,53466.0,Etihad Stadium,Robert Jones,H
+86,9.0,Sat,2023-10-21,17:30,Chelsea,1.3,2–2,1.0,Arsenal,39723.0,Stamford Bridge,Chris Kavanagh,T
+87,9.0,Sat,2023-10-21,20:00,Sheffield Utd,1.4,1–2,1.1,Manchester Utd,31543.0,Bramall Lane,Michael Oliver,A
+88,9.0,Sun,2023-10-22,16:30,Aston Villa,1.9,4–1,1.1,West Ham,41734.0,Villa Park,David Coote,H
+89,9.0,Mon,2023-10-23,20:00,Tottenham,1.5,2–0,1.0,Fulham,61286.0,Tottenham Hotspur Stadium,Anthony Taylor,H
+90,10.0,Fri,2023-10-27,20:00,Crystal Palace,0.6,1–2,1.1,Tottenham,25074.0,Selhurst Park,Andy Madley,A
+91,10.0,Sat,2023-10-28,12:30,Chelsea,1.9,0–2,2.2,Brentford,39575.0,Stamford Bridge,Simon Hooper,A
+92,10.0,Sat,2023-10-28,15:00,Arsenal,2.8,5–0,0.0,Sheffield Utd,60153.0,Emirates Stadium,Tim Robinson,H
+93,10.0,Sat,2023-10-28,15:00,Bournemouth,1.1,2–1,0.8,Burnley,11152.0,Vitality Stadium,Samuel Barrott,H
+94,10.0,Sat,2023-10-28,17:30,Wolves,0.9,2–2,2.2,Newcastle Utd,31584.0,Molineux Stadium,Anthony Taylor,T
+95,10.0,Sun,2023-10-29,13:00,West Ham,0.7,0–1,0.8,Everton,62469.0,London Stadium,Stuart Attwell,A
+96,10.0,Sun,2023-10-29,14:00,Brighton,1.4,1–1,0.7,Fulham,31550.0,The American Express Community Stadium,Michael Salisbury,T
+97,10.0,Sun,2023-10-29,14:00,Liverpool,3.2,3–0,0.4,Nott'ham Forest,50143.0,Anfield,Chris Kavanagh,H
+98,10.0,Sun,2023-10-29,14:00,Aston Villa,2.3,3–1,0.5,Luton Town,41785.0,Villa Park,John Brooks,H
+99,10.0,Sun,2023-10-29,15:30,Manchester Utd,0.9,0–3,4.0,Manchester City,73502.0,Old Trafford,Paul Tierney,A
+100,11.0,Sat,2023-11-04,12:30,Fulham,1.0,0–1,0.7,Manchester Utd,24415.0,Craven Cottage,John Brooks,A
+101,11.0,Sat,2023-11-04,15:00,Brentford,1.5,3–2,1.8,West Ham,17103.0,Gtech Community Stadium,Thomas Bramall,H
+102,11.0,Sat,2023-11-04,15:00,Burnley,1.1,0–2,1.3,Crystal Palace,21578.0,Turf Moor,Peter Bankes,A
+103,11.0,Sat,2023-11-04,15:00,Manchester City,1.9,6–1,0.9,Bournemouth,53358.0,Etihad Stadium,Craig Pawson,H
+104,11.0,Sat,2023-11-04,15:00,Everton,0.7,1–1,0.5,Brighton,38683.0,Goodison Park,Tim Robinson,T
+105,11.0,Sat,2023-11-04,15:00,Sheffield Utd,1.0,2–1,1.2,Wolves,29454.0,Bramall Lane,Robert Jones,H
+106,11.0,Sat,2023-11-04,17:30,Newcastle Utd,1.0,1–0,0.6,Arsenal,52194.0,St James' Park,Stuart Attwell,H
+107,11.0,Sun,2023-11-05,14:00,Nott'ham Forest,0.4,2–0,1.2,Aston Villa,29313.0,The City Ground,Jarred Gillett,H
+108,11.0,Sun,2023-11-05,16:30,Luton Town,0.8,1–1,2.6,Liverpool,11049.0,Kenilworth Road Stadium,Andy Madley,T
+109,11.0,Mon,2023-11-06,20:00,Tottenham,0.9,1–4,4.1,Chelsea,61726.0,Tottenham Hotspur Stadium,Michael Oliver,A
+110,12.0,Sat,2023-11-11,12:30,Wolves,2.1,2–1,0.7,Tottenham,31642.0,Molineux Stadium,Tim Robinson,H
+111,12.0,Sat,2023-11-11,15:00,Manchester Utd,2.2,1–0,0.4,Luton Town,73599.0,Old Trafford,Graham Scott,H
+112,12.0,Sat,2023-11-11,15:00,Crystal Palace,2.2,2–3,1.5,Everton,25103.0,Selhurst Park,Samuel Barrott,A
+113,12.0,Sat,2023-11-11,15:00,Arsenal,1.8,3–1,0.3,Burnley,60232.0,Emirates Stadium,Michael Oliver,H
+114,12.0,Sat,2023-11-11,17:30,Bournemouth,2.4,2–0,0.5,Newcastle Utd,11201.0,Vitality Stadium,Chris Kavanagh,H
+115,12.0,Sun,2023-11-12,14:00,Aston Villa,3.0,3–1,0.9,Fulham,41608.0,Villa Park,Simon Hooper,H
+116,12.0,Sun,2023-11-12,14:00,Brighton,1.5,1–1,1.1,Sheffield Utd,31367.0,The American Express Community Stadium,John Brooks,T
+117,12.0,Sun,2023-11-12,14:00,Liverpool,1.7,3–0,1.6,Brentford,50151.0,Anfield,Paul Tierney,H
+118,12.0,Sun,2023-11-12,14:00,West Ham,1.8,3–2,1.7,Nott'ham Forest,62470.0,London Stadium,Michael Salisbury,H
+119,12.0,Sun,2023-11-12,16:30,Chelsea,2.9,4–4,2.9,Manchester City,39532.0,Stamford Bridge,Anthony Taylor,T
+120,13.0,Sat,2023-11-25,12:30,Manchester City,1.3,1–1,0.6,Liverpool,53289.0,Etihad Stadium,Chris Kavanagh,T
+121,13.0,Sat,2023-11-25,15:00,Sheffield Utd,0.8,1–3,2.9,Bournemouth,30208.0,Bramall Lane,Andy Madley,A
+122,13.0,Sat,2023-11-25,15:00,Newcastle Utd,2.4,4–1,0.5,Chelsea,52227.0,St James' Park,Simon Hooper,H
+123,13.0,Sat,2023-11-25,15:00,Luton Town,0.9,2–1,1.6,Crystal Palace,11029.0,Kenilworth Road Stadium,Jarred Gillett,H
+124,13.0,Sat,2023-11-25,15:00,Burnley,1.3,1–2,0.9,West Ham,21319.0,Turf Moor,Samuel Barrott,A
+125,13.0,Sat,2023-11-25,15:00,Nott'ham Forest,1.9,2–3,1.3,Brighton,29404.0,The City Ground,Anthony Taylor,A
+126,13.0,Sat,2023-11-25,17:30,Brentford,1.1,0–1,1.6,Arsenal,17201.0,Gtech Community Stadium,Tim Robinson,A
+127,13.0,Sun,2023-11-26,14:00,Tottenham,2.3,1–2,1.7,Aston Villa,61679.0,Tottenham Hotspur Stadium,Robert Jones,A
+128,13.0,Sun,2023-11-26,16:30,Everton,2.4,0–3,2.2,Manchester Utd,39257.0,Goodison Park,John Brooks,A
+129,13.0,Mon,2023-11-27,20:00,Fulham,2.9,3–2,1.4,Wolves,24366.0,Craven Cottage,Michael Salisbury,H
+130,14.0,Sat,2023-12-02,15:00,Arsenal,2.8,2–1,0.7,Wolves,60262.0,Emirates Stadium,Peter Bankes,H
+131,14.0,Sat,2023-12-02,15:00,Brentford,3.1,3–1,0.2,Luton Town,17075.0,Gtech Community Stadium,Anthony Taylor,H
+132,14.0,Sat,2023-12-02,15:00,Burnley,1.8,5–0,0.4,Sheffield Utd,21478.0,Turf Moor,Chris Kavanagh,H
+133,14.0,Sat,2023-12-02,17:30,Nott'ham Forest,0.7,0–1,0.7,Everton,29404.0,The City Ground,Paul Tierney,A
+134,14.0,Sat,2023-12-02,20:00,Newcastle Utd,2.4,1–0,0.5,Manchester Utd,52214.0,St James' Park,Robert Jones,H
+135,14.0,Sun,2023-12-03,14:00,Bournemouth,2.0,2–2,0.7,Aston Villa,11191.0,Vitality Stadium,Thomas Bramall,T
+136,14.0,Sun,2023-12-03,14:00,West Ham,1.1,1–1,0.9,Crystal Palace,62414.0,London Stadium,Michael Oliver,T
+137,14.0,Sun,2023-12-03,14:00,Liverpool,2.1,4–3,1.2,Fulham,50124.0,Anfield,Stuart Attwell,H
+138,14.0,Sun,2023-12-03,14:00,Chelsea,2.1,3–2,1.1,Brighton,39647.0,Stamford Bridge,Craig Pawson,H
+139,14.0,Sun,2023-12-03,16:30,Manchester City,2.6,3–3,0.5,Tottenham,53473.0,Etihad Stadium,Simon Hooper,T
+140,15.0,Tue,2023-12-05,19:30,Wolves,0.8,1–0,0.9,Burnley,30439.0,Molineux Stadium,Jarred Gillett,H
+141,15.0,Tue,2023-12-05,20:15,Luton Town,0.5,3–4,2.2,Arsenal,11031.0,Kenilworth Road Stadium,Samuel Barrott,A
+142,15.0,Wed,2023-12-06,19:30,Sheffield Utd,1.0,0–2,1.7,Liverpool,31406.0,Bramall Lane,Simon Hooper,A
+143,15.0,Wed,2023-12-06,19:30,Brighton,1.5,2–1,1.5,Brentford,31571.0,The American Express Community Stadium,Peter Bankes,H
+144,15.0,Wed,2023-12-06,19:30,Crystal Palace,1.0,0–2,1.8,Bournemouth,25078.0,Selhurst Park,Craig Pawson,A
+145,15.0,Wed,2023-12-06,19:30,Fulham,2.5,5–0,0.3,Nott'ham Forest,24105.0,Craven Cottage,Joshua Smith,H
+146,15.0,Wed,2023-12-06,20:15,Aston Villa,2.3,1–0,0.6,Manchester City,41421.0,Villa Park,John Brooks,H
+147,15.0,Wed,2023-12-06,20:15,Manchester Utd,4.1,2–1,1.5,Chelsea,73607.0,Old Trafford,Chris Kavanagh,H
+148,15.0,Thu,2023-12-07,19:30,Everton,3.3,3–0,1.5,Newcastle Utd,38198.0,Goodison Park,Tim Robinson,H
+149,15.0,Thu,2023-12-07,20:15,Tottenham,1.8,1–2,2.2,West Ham,61171.0,Tottenham Hotspur Stadium,Michael Salisbury,A
+150,16.0,Sat,2023-12-09,12:30,Crystal Palace,1.7,1–2,1.2,Liverpool,25103.0,Selhurst Park,Andy Madley,A
+151,16.0,Sat,2023-12-09,15:00,Sheffield Utd,0.8,1–0,0.6,Brentford,28509.0,Bramall Lane,Stuart Attwell,H
+152,16.0,Sat,2023-12-09,15:00,Brighton,2.6,1–1,0.6,Burnley,31511.0,The American Express Community Stadium,Simon Hooper,T
+153,16.0,Sat,2023-12-09,15:00,Wolves,1.2,1–1,1.3,Nott'ham Forest,31543.0,Molineux Stadium,Samuel Barrott,T
+154,16.0,Sat,2023-12-09,15:00,Manchester Utd,1.1,0–3,1.5,Bournemouth,73427.0,Old Trafford,Peter Bankes,A
+155,16.0,Sat,2023-12-09,17:30,Aston Villa,0.6,1–0,1.4,Arsenal,42000.0,Villa Park,Jarred Gillett,H
+156,16.0,Sun,2023-12-10,14:00,Luton Town,0.3,1–2,1.6,Manchester City,11047.0,Kenilworth Road Stadium,Tim Robinson,A
+157,16.0,Sun,2023-12-10,14:00,Fulham,2.3,5–0,1.3,West Ham,23988.0,Craven Cottage,Paul Tierney,H
+158,16.0,Sun,2023-12-10,14:00,Everton,1.2,2–0,0.9,Chelsea,39280.0,Goodison Park,Michael Oliver,H
+159,16.0,Sun,2023-12-10,16:30,Tottenham,3.8,4–1,1.7,Newcastle Utd,61171.0,Tottenham Hotspur Stadium,Chris Kavanagh,H
+160,17.0,Fri,2023-12-15,20:00,Nott'ham Forest,1.3,0–2,1.5,Tottenham,29296.0,The City Ground,Jarred Gillett,A
+161,17.0,Sat,2023-12-16,15:00,Chelsea,3.1,2–0,0.4,Sheffield Utd,39599.0,Stamford Bridge,Andy Madley,H
+162,17.0,Sat,2023-12-16,15:00,Newcastle Utd,3.5,3–0,0.3,Fulham,52055.0,St James' Park,Samuel Barrott,H
+163,17.0,Sat,2023-12-16,15:00,Manchester City,1.6,2–2,1.8,Crystal Palace,53248.0,Etihad Stadium,Paul Tierney,T
+164,17.0,Sat,2023-12-16,17:30,Burnley,0.7,0–2,1.4,Everton,21413.0,Turf Moor,Anthony Taylor,A
+165,17.0,Sun,2023-12-17,14:00,West Ham,1.1,3–0,0.7,Wolves,62455.0,London Stadium,Chris Kavanagh,H
+166,17.0,Sun,2023-12-17,14:00,Arsenal,2.3,2–0,0.7,Brighton,60257.0,Emirates Stadium,Tim Robinson,H
+167,17.0,Sun,2023-12-17,14:00,Brentford,0.5,1–2,1.4,Aston Villa,17034.0,Gtech Community Stadium,David Coote,A
+168,17.0,Sun,2023-12-17,16:30,Liverpool,2.3,0–0,0.8,Manchester Utd,57158.0,Anfield,Michael Oliver,T
+169,18.0,Thu,2023-12-21,20:00,Crystal Palace,1.3,1–1,1.2,Brighton,24171.0,Selhurst Park,John Brooks,T
+170,18.0,Fri,2023-12-22,20:00,Aston Villa,0.9,1–1,0.6,Sheffield Utd,41651.0,Villa Park,Anthony Taylor,T
+171,18.0,Sat,2023-12-23,12:30,West Ham,1.2,2–0,1.0,Manchester Utd,64472.0,London Stadium,Simon Hooper,H
+172,18.0,Sat,2023-12-23,15:00,Fulham,1.3,0–2,0.4,Burnley,23598.0,Craven Cottage,Rebecca Welch,A
+173,18.0,Sat,2023-12-23,15:00,Nott'ham Forest,1.0,2–3,1.6,Bournemouth,29188.0,The City Ground,Robert Jones,A
+174,18.0,Sat,2023-12-23,15:00,Luton Town,1.4,1–0,1.4,Newcastle Utd,11042.0,Kenilworth Road Stadium,Darren England,H
+175,18.0,Sat,2023-12-23,15:00,Tottenham,1.5,2–1,1.8,Everton,61808.0,Tottenham Hotspur Stadium,Stuart Attwell,H
+176,18.0,Sat,2023-12-23,17:30,Liverpool,1.0,1–1,0.7,Arsenal,57548.0,Anfield,Chris Kavanagh,T
+177,18.0,Sun,2023-12-24,13:00,Wolves,1.3,2–1,2.0,Chelsea,31641.0,Molineux Stadium,David Coote,H
+178,19.0,Tue,2023-12-26,12:30,Newcastle Utd,2.4,1–3,3.5,Nott'ham Forest,52207.0,St James' Park,Chris Kavanagh,A
+179,19.0,Tue,2023-12-26,15:00,Bournemouth,1.8,3–0,0.3,Fulham,11099.0,Vitality Stadium,Tim Robinson,H
+180,19.0,Tue,2023-12-26,15:00,Sheffield Utd,2.4,2–3,0.6,Luton Town,31041.0,Bramall Lane,Samuel Allison,A
+181,19.0,Tue,2023-12-26,17:30,Burnley,0.8,0–2,1.8,Liverpool,21624.0,Turf Moor,Paul Tierney,A
+182,19.0,Tue,2023-12-26,20:00,Manchester Utd,1.1,3–2,1.7,Aston Villa,73574.0,Old Trafford,Craig Pawson,H
+183,19.0,Wed,2023-12-27,19:30,Brentford,2.2,1–4,2.4,Wolves,17109.0,Gtech Community Stadium,Andy Madley,A
+184,19.0,Wed,2023-12-27,19:30,Chelsea,2.6,2–1,1.1,Crystal Palace,39618.0,Stamford Bridge,Michael Salisbury,H
+185,19.0,Wed,2023-12-27,20:15,Everton,1.0,1–3,2.4,Manchester City,39327.0,Goodison Park,John Brooks,A
+186,19.0,Thu,2023-12-28,19:30,Brighton,3.2,4–2,2.3,Tottenham,31675.0,The American Express Community Stadium,Jarred Gillett,H
+187,19.0,Thu,2023-12-28,20:15,Arsenal,2.7,0–2,1.4,West Ham,60261.0,Emirates Stadium,Michael Oliver,A
+188,20.0,Sat,2023-12-30,12:30,Luton Town,2.3,2–3,1.5,Chelsea,11041.0,Kenilworth Road Stadium,Paul Tierney,A
+189,20.0,Sat,2023-12-30,15:00,Crystal Palace,1.0,3–1,1.4,Brentford,25472.0,Selhurst Park,Robert Jones,H
+190,20.0,Sat,2023-12-30,15:00,Wolves,1.9,3–0,0.4,Everton,31639.0,Molineux Stadium,Thomas Bramall,H
+191,20.0,Sat,2023-12-30,15:00,Manchester City,2.2,2–0,0.3,Sheffield Utd,53108.0,Etihad Stadium,David Coote,H
+192,20.0,Sat,2023-12-30,15:00,Aston Villa,3.2,3–2,1.2,Burnley,41613.0,Villa Park,Stuart Attwell,H
+193,20.0,Sat,2023-12-30,17:30,Nott'ham Forest,0.7,2–1,0.8,Manchester Utd,29529.0,The City Ground,Tim Robinson,H
+194,20.0,Sun,2023-12-31,14:00,Fulham,1.2,2–1,1.6,Arsenal,24444.0,Craven Cottage,Joshua Smith,H
+195,20.0,Sun,2023-12-31,14:00,Tottenham,2.3,3–1,1.7,Bournemouth,61780.0,Tottenham Hotspur Stadium,Simon Hooper,H
+196,20.0,Mon,2024-01-01,20:00,Liverpool,7.0,4–2,0.6,Newcastle Utd,57471.0,Anfield,Anthony Taylor,H
+197,20.0,Tue,2024-01-02,19:30,West Ham,0.7,0–0,2.3,Brighton,62462.0,London Stadium,Samuel Barrott,T
+198,21.0,Fri,2024-01-12,19:45,Burnley,1.1,1–1,0.9,Luton Town,20155.0,Turf Moor,Tony Harrington,T
+199,21.0,Sat,2024-01-13,12:30,Chelsea,2.2,1–0,0.8,Fulham,39643.0,Stamford Bridge,Anthony Taylor,H
+200,21.0,Sat,2024-01-13,17:30,Newcastle Utd,1.3,2–3,3.0,Manchester City,52190.0,St James' Park,Chris Kavanagh,A
+201,21.0,Sun,2024-01-14,14:00,Everton,1.1,0–0,1.2,Aston Villa,39284.0,Goodison Park,David Coote,T
+202,21.0,Sun,2024-01-14,16:30,Manchester Utd,0.8,2–2,1.2,Tottenham,73489.0,Old Trafford,John Brooks,T
+203,21.0,Sat,2024-01-20,12:30,Arsenal,3.3,5–0,0.3,Crystal Palace,60284.0,Emirates Stadium,Paul Tierney,H
+204,21.0,Sat,2024-01-20,17:30,Brentford,1.2,3–2,1.2,Nott'ham Forest,17077.0,Gtech Community Stadium,Darren England,H
+205,21.0,Sun,2024-01-21,14:00,Sheffield Utd,2.5,2–2,2.3,West Ham,29164.0,Bramall Lane,Michael Salisbury,T
+206,21.0,Sun,2024-01-21,16:30,Bournemouth,1.4,0–4,1.5,Liverpool,11228.0,Vitality Stadium,Andy Madley,A
+207,21.0,Mon,2024-01-22,19:45,Brighton,1.0,0–0,1.1,Wolves,41505.0,The American Express Community Stadium,Craig Pawson,T
+208,22.0,Tue,2024-01-30,19:30,Nott'ham Forest,0.5,1–2,1.2,Arsenal,29387.0,The City Ground,Simon Hooper,A
+209,22.0,Tue,2024-01-30,19:45,Luton Town,3.1,4–0,0.9,Brighton,10994.0,Kenilworth Road Stadium,Robert Jones,H
+210,22.0,Tue,2024-01-30,19:45,Fulham,1.6,0–0,1.9,Everton,24376.0,Craven Cottage,Thomas Bramall,T
+211,22.0,Tue,2024-01-30,20:00,Crystal Palace,1.1,3–2,0.8,Sheffield Utd,24781.0,Selhurst Park,Tony Harrington,H
+212,22.0,Tue,2024-01-30,20:15,Aston Villa,1.4,1–3,2.6,Newcastle Utd,42191.0,Villa Park,John Brooks,A
+213,22.0,Wed,2024-01-31,19:30,Manchester City,1.7,3–1,1.4,Burnley,52143.0,Etihad Stadium,Samuel Barrott,H
+214,22.0,Wed,2024-01-31,19:30,Tottenham,2.9,3–2,1.6,Brentford,61210.0,Tottenham Hotspur Stadium,David Coote,H
+215,22.0,Wed,2024-01-31,20:15,Liverpool,2.9,4–1,0.6,Chelsea,57524.0,Anfield,Paul Tierney,H
+216,22.0,Thu,2024-02-01,19:30,West Ham,1.4,1–1,1.2,Bournemouth,62478.0,London Stadium,Tim Robinson,T
+217,22.0,Thu,2024-02-01,20:15,Wolves,2.1,3–4,3.3,Manchester Utd,31641.0,Molineux Stadium,Jarred Gillett,A
+218,23.0,Sat,2024-02-03,12:30,Everton,2.6,2–2,1.0,Tottenham,39321.0,Goodison Park,Michael Oliver,T
+219,23.0,Sat,2024-02-03,15:00,Burnley,1.8,2–2,1.5,Fulham,20203.0,Turf Moor,Darren Bond,T
+220,23.0,Sat,2024-02-03,15:00,Brighton,1.4,4–1,0.3,Crystal Palace,31345.0,The American Express Community Stadium,Simon Hooper,H
+221,23.0,Sat,2024-02-03,15:00,Newcastle Utd,2.3,4–4,2.4,Luton Town,52211.0,St James' Park,Thomas Bramall,T
+222,23.0,Sat,2024-02-03,17:30,Sheffield Utd,1.4,0–5,2.2,Aston Villa,30187.0,Bramall Lane,Paul Tierney,A
+223,23.0,Sun,2024-02-04,14:00,Chelsea,1.7,2–4,2.0,Wolves,39628.0,Stamford Bridge,Tim Robinson,A
+224,23.0,Sun,2024-02-04,14:00,Bournemouth,1.3,1–1,0.5,Nott'ham Forest,11200.0,Vitality Stadium,Rebecca Welch,T
+225,23.0,Sun,2024-02-04,14:00,Manchester Utd,0.7,3–0,1.4,West Ham,73612.0,Old Trafford,Andy Madley,H
+226,23.0,Sun,2024-02-04,16:30,Arsenal,3.5,3–1,0.4,Liverpool,60374.0,Emirates Stadium,Anthony Taylor,H
+227,23.0,Mon,2024-02-05,20:00,Brentford,1.0,1–3,2.1,Manchester City,17096.0,Gtech Community Stadium,Jarred Gillett,A
+228,24.0,Sat,2024-02-10,12:30,Manchester City,1.6,2–0,0.3,Everton,52187.0,Etihad Stadium,John Brooks,H
+229,24.0,Sat,2024-02-10,15:00,Wolves,1.0,0–2,1.9,Brentford,30731.0,Molineux Stadium,Simon Hooper,A
+230,24.0,Sat,2024-02-10,15:00,Fulham,1.6,3–1,1.8,Bournemouth,24271.0,Craven Cottage,Darren England,H
+231,24.0,Sat,2024-02-10,15:00,Tottenham,1.6,2–1,1.2,Brighton,61445.0,Tottenham Hotspur Stadium,Samuel Barrott,H
+232,24.0,Sat,2024-02-10,15:00,Liverpool,2.8,3–1,1.3,Burnley,59896.0,Anfield,Tim Robinson,H
+233,24.0,Sat,2024-02-10,15:00,Luton Town,1.8,1–3,1.7,Sheffield Utd,11138.0,Kenilworth Road Stadium,Chris Kavanagh,A
+234,24.0,Sat,2024-02-10,17:30,Nott'ham Forest,1.5,2–3,0.5,Newcastle Utd,29451.0,The City Ground,Anthony Taylor,A
+235,24.0,Sun,2024-02-11,14:00,West Ham,0.2,0–6,3.6,Arsenal,62475.0,London Stadium,Craig Pawson,A
+236,24.0,Sun,2024-02-11,16:30,Aston Villa,2.4,1–2,1.8,Manchester Utd,42185.0,Villa Park,Robert Jones,A
+237,24.0,Mon,2024-02-12,20:00,Crystal Palace,0.6,1–3,1.4,Chelsea,25110.0,Selhurst Park,Michael Oliver,A
+238,25.0,Sat,2024-02-17,12:30,Brentford,1.6,1–4,2.8,Liverpool,17193.0,Gtech Community Stadium,Michael Oliver,A
+239,25.0,Sat,2024-02-17,15:00,Nott'ham Forest,2.8,2–0,0.5,West Ham,29490.0,The City Ground,Thomas Bramall,H
+240,25.0,Sat,2024-02-17,15:00,Burnley,0.3,0–5,2.3,Arsenal,21311.0,Turf Moor,Jarred Gillett,A
+241,25.0,Sat,2024-02-17,15:00,Fulham,1.5,1–2,1.5,Aston Villa,24401.0,Craven Cottage,Lewis Smith,A
+242,25.0,Sat,2024-02-17,15:00,Newcastle Utd,2.2,2–2,2.2,Bournemouth,52224.0,St James' Park,Michael Salisbury,T
+243,25.0,Sat,2024-02-17,15:00,Tottenham,1.6,1–2,1.8,Wolves,61532.0,Tottenham Hotspur Stadium,Anthony Taylor,A
+244,25.0,Sat,2024-02-17,17:30,Manchester City,2.6,1–1,1.4,Chelsea,52178.0,Etihad Stadium,Andy Madley,T
+245,25.0,Sun,2024-02-18,14:00,Sheffield Utd,0.6,0–5,2.9,Brighton,29522.0,Bramall Lane,Stuart Attwell,A
+246,25.0,Sun,2024-02-18,16:30,Luton Town,1.8,1–2,2.9,Manchester Utd,11483.0,Kenilworth Road Stadium,David Coote,A
+247,25.0,Mon,2024-02-19,20:00,Everton,1.7,1–1,0.7,Crystal Palace,38164.0,Goodison Park,Paul Tierney,T
+248,18.0,Tue,2024-02-20,19:30,Manchester City,2.3,1–0,0.4,Brentford,52247.0,Etihad Stadium,Darren England,H
+249,26.0,Wed,2024-02-21,19:30,Liverpool,3.3,4–1,0.9,Luton Town,59713.0,Anfield,Andy Madley,H
+250,26.0,Sat,2024-02-24,15:00,Aston Villa,3.6,4–2,2.6,Nott'ham Forest,42131.0,Villa Park,Samuel Barrott,H
+251,26.0,Sat,2024-02-24,15:00,Manchester Utd,1.7,1–2,1.2,Fulham,73487.0,Old Trafford,Michael Oliver,A
+252,26.0,Sat,2024-02-24,15:00,Crystal Palace,2.4,3–0,0.1,Burnley,24042.0,Selhurst Park,Lewis Smith,H
+253,26.0,Sat,2024-02-24,15:00,Brighton,1.4,1–1,0.3,Everton,41646.0,The American Express Community Stadium,Tony Harrington,T
+254,26.0,Sat,2024-02-24,17:30,Bournemouth,0.9,0–1,1.6,Manchester City,11184.0,Vitality Stadium,Jarred Gillett,A
+255,26.0,Sat,2024-02-24,20:00,Arsenal,2.8,4–1,0.2,Newcastle Utd,60298.0,Emirates Stadium,Paul Tierney,H
+256,26.0,Sun,2024-02-25,13:30,Wolves,1.3,1–0,0.6,Sheffield Utd,30789.0,Molineux Stadium,Darren Bond,H
+257,26.0,Mon,2024-02-26,20:00,West Ham,1.7,4–2,0.9,Brentford,62450.0,London Stadium,Simon Hooper,H
+258,27.0,Sat,2024-03-02,15:00,Brentford,1.8,2–2,1.8,Chelsea,17140.0,Gtech Community Stadium,Jarred Gillett,T
+259,27.0,Sat,2024-03-02,15:00,Newcastle Utd,2.1,3–0,0.8,Wolves,52206.0,St James' Park,Tim Robinson,H
+260,27.0,Sat,2024-03-02,15:00,Fulham,1.3,3–0,1.3,Brighton,24460.0,Craven Cottage,Simon Hooper,H
+261,27.0,Sat,2024-03-02,15:00,Everton,2.7,1–3,1.9,West Ham,39262.0,Goodison Park,Craig Pawson,A
+262,27.0,Sat,2024-03-02,15:00,Tottenham,1.9,3–1,0.3,Crystal Palace,61339.0,Tottenham Hotspur Stadium,John Brooks,H
+263,27.0,Sat,2024-03-02,15:00,Nott'ham Forest,1.0,0–1,2.0,Liverpool,29603.0,The City Ground,Paul Tierney,A
+264,27.0,Sat,2024-03-02,17:30,Luton Town,1.8,2–3,1.9,Aston Villa,11594.0,Kenilworth Road Stadium,Michael Oliver,A
+265,27.0,Sun,2024-03-03,13:00,Burnley,1.5,0–2,1.1,Bournemouth,19713.0,Turf Moor,David Coote,A
+266,27.0,Sun,2024-03-03,15:30,Manchester City,3.3,3–1,0.2,Manchester Utd,53514.0,Etihad Stadium,Andy Madley,H
+267,27.0,Mon,2024-03-04,20:00,Sheffield Utd,0.2,0–6,2.3,Arsenal,29157.0,Bramall Lane,Samuel Barrott,A
+268,28.0,Sat,2024-03-09,12:30,Manchester Utd,2.7,2–0,1.6,Everton,73601.0,Old Trafford,Simon Hooper,H
+269,28.0,Sat,2024-03-09,15:00,Wolves,0.8,2–1,2.6,Fulham,30860.0,Molineux Stadium,Tony Harrington,H
+270,28.0,Sat,2024-03-09,15:00,Bournemouth,3.3,2–2,1.2,Sheffield Utd,11074.0,Vitality Stadium,Anthony Taylor,T
+271,28.0,Sat,2024-03-09,15:00,Crystal Palace,2.7,1–1,0.8,Luton Town,25103.0,Selhurst Park,Sunny Singh,T
+272,28.0,Sat,2024-03-09,17:30,Arsenal,1.3,2–1,1.0,Brentford,60331.0,Emirates Stadium,Robert Jones,H
+273,28.0,Sun,2024-03-10,13:00,Aston Villa,0.8,0–4,1.5,Tottenham,42310.0,Villa Park,Chris Kavanagh,A
+274,28.0,Sun,2024-03-10,14:00,Brighton,0.4,1–0,0.7,Nott'ham Forest,31505.0,The American Express Community Stadium,Michael Salisbury,H
+275,28.0,Sun,2024-03-10,14:00,West Ham,2.1,2–2,0.7,Burnley,62441.0,London Stadium,Darren England,T
+276,28.0,Sun,2024-03-10,15:45,Liverpool,2.7,1–1,1.6,Manchester City,59947.0,Anfield,Michael Oliver,T
+277,28.0,Mon,2024-03-11,20:00,Chelsea,1.6,3–2,0.7,Newcastle Utd,37753.0,Stamford Bridge,John Brooks,H
+278,17.0,Wed,2024-03-13,19:30,Bournemouth,2.3,4–3,2.0,Luton Town,11198.0,Vitality Stadium,Samuel Allison,H
+279,29.0,Sat,2024-03-16,15:00,Burnley,2.8,2–1,1.1,Brentford,20431.0,Turf Moor,Darren Bond,H
+280,29.0,Sat,2024-03-16,15:00,Luton Town,0.6,1–1,2.0,Nott'ham Forest,11630.0,Kenilworth Road Stadium,Darren England,T
+281,29.0,Sat,2024-03-16,17:30,Fulham,2.6,3–0,2.4,Tottenham,24410.0,Craven Cottage,Robert Jones,H
+282,29.0,Sun,2024-03-17,14:00,West Ham,2.0,1–1,0.7,Aston Villa,62461.0,London Stadium,Jarred Gillett,T
+283,30.0,Sat,2024-03-30,12:30,Newcastle Utd,4.1,4–3,1.4,West Ham,52199.0,St James' Park,Robert Jones,H
+284,30.0,Sat,2024-03-30,15:00,Nott'ham Forest,0.9,1–1,1.2,Crystal Palace,29520.0,The City Ground,Chris Kavanagh,T
+285,30.0,Sat,2024-03-30,15:00,Sheffield Utd,1.9,3–3,1.3,Fulham,30010.0,Bramall Lane,Tim Robinson,T
+286,30.0,Sat,2024-03-30,15:00,Chelsea,4.2,2–2,1.6,Burnley,39535.0,Stamford Bridge,Darren England,T
+287,30.0,Sat,2024-03-30,15:00,Tottenham,2.9,2–1,0.5,Luton Town,61534.0,Tottenham Hotspur Stadium,Jarred Gillett,H
+288,30.0,Sat,2024-03-30,15:00,Bournemouth,1.3,2–1,1.0,Everton,11207.0,Vitality Stadium,Samuel Barrott,H
+289,30.0,Sat,2024-03-30,17:30,Aston Villa,1.0,2–0,1.5,Wolves,42640.0,Villa Park,Paul Tierney,H
+290,30.0,Sat,2024-03-30,20:00,Brentford,3.2,1–1,0.6,Manchester Utd,17138.0,Gtech Community Stadium,Simon Hooper,T
+291,30.0,Sun,2024-03-31,14:00,Liverpool,2.8,2–1,0.5,Brighton,60061.0,Anfield,David Coote,H
+292,30.0,Sun,2024-03-31,16:30,Manchester City,1.0,0–0,0.7,Arsenal,52178.0,Etihad Stadium,Anthony Taylor,T
+293,31.0,Tue,2024-04-02,19:30,Newcastle Utd,2.4,1–1,1.4,Everton,52135.0,St James' Park,Tony Harrington,T
+294,31.0,Tue,2024-04-02,19:30,Nott'ham Forest,1.5,3–1,1.5,Fulham,28997.0,The City Ground,Michael Oliver,H
+295,31.0,Tue,2024-04-02,19:45,Bournemouth,1.1,1–0,0.2,Crystal Palace,11058.0,Vitality Stadium,Graham Scott,H
+296,31.0,Tue,2024-04-02,19:45,Burnley,1.3,1–1,0.9,Wolves,21528.0,Turf Moor,Thomas Bramall,T
+297,31.0,Tue,2024-04-02,20:15,West Ham,1.5,1–1,1.0,Tottenham,62469.0,London Stadium,John Brooks,T
+298,31.0,Wed,2024-04-03,19:30,Brentford,0.6,0–0,1.1,Brighton,17024.0,Gtech Community Stadium,Andy Madley,T
+299,31.0,Wed,2024-04-03,19:30,Arsenal,0.7,2–0,0.3,Luton Town,60262.0,Emirates Stadium,Craig Pawson,H
+300,31.0,Wed,2024-04-03,20:15,Manchester City,3.4,4–1,0.8,Aston Villa,53422.0,Etihad Stadium,Darren England,H
+301,31.0,Thu,2024-04-04,19:30,Liverpool,1.8,3–1,0.6,Sheffield Utd,60055.0,Anfield,Stuart Attwell,H
+302,31.0,Thu,2024-04-04,20:15,Chelsea,3.0,4–3,1.5,Manchester Utd,39694.0,Stamford Bridge,Jarred Gillett,H
+303,32.0,Sat,2024-04-06,12:30,Crystal Palace,1.1,2–4,1.9,Manchester City,25132.0,Selhurst Park,Paul Tierney,A
+304,32.0,Sat,2024-04-06,15:00,Luton Town,1.5,2–1,0.4,Bournemouth,11797.0,Kenilworth Road Stadium,Andy Madley,H
+305,32.0,Sat,2024-04-06,15:00,Everton,0.9,1–0,0.5,Burnley,39125.0,Goodison Park,Michael Oliver,H
+306,32.0,Sat,2024-04-06,15:00,Wolves,1.5,1–2,1.2,West Ham,31504.0,Molineux Stadium,Tony Harrington,A
+307,32.0,Sat,2024-04-06,15:00,Aston Villa,1.5,3–3,1.5,Brentford,42118.0,Villa Park,Michael Salisbury,T
+308,32.0,Sat,2024-04-06,15:00,Fulham,1.2,0–1,1.0,Newcastle Utd,24418.0,Craven Cottage,Samuel Allison,A
+309,32.0,Sat,2024-04-06,17:30,Brighton,0.5,0–3,3.4,Arsenal,31677.0,The American Express Community Stadium,John Brooks,A
+310,32.0,Sun,2024-04-07,15:30,Manchester Utd,0.7,2–2,3.6,Liverpool,73501.0,Old Trafford,Anthony Taylor,T
+311,32.0,Sun,2024-04-07,17:30,Sheffield Utd,1.4,2–2,0.3,Chelsea,28638.0,Bramall Lane,Robert Jones,T
+312,32.0,Sun,2024-04-07,18:00,Tottenham,1.5,3–1,1.5,Nott'ham Forest,61098.0,Tottenham Hotspur Stadium,Simon Hooper,H
+313,33.0,Sat,2024-04-13,12:30,Newcastle Utd,2.8,4–0,0.8,Tottenham,52147.0,St James' Park,Tim Robinson,H
+314,33.0,Sat,2024-04-13,15:00,Manchester City,4.2,5–1,0.5,Luton Town,52149.0,Etihad Stadium,John Brooks,H
+315,33.0,Sat,2024-04-13,15:00,Burnley,1.7,1–1,0.9,Brighton,20687.0,Turf Moor,Simon Hooper,T
+316,33.0,Sat,2024-04-13,15:00,Nott'ham Forest,1.9,2–2,1.0,Wolves,29604.0,The City Ground,Craig Pawson,T
+317,33.0,Sat,2024-04-13,15:00,Brentford,1.0,2–0,0.8,Sheffield Utd,17115.0,Gtech Community Stadium,Samuel Barrott,H
+318,33.0,Sat,2024-04-13,17:30,Bournemouth,1.6,2–2,1.2,Manchester Utd,11229.0,Vitality Stadium,Tony Harrington,T
+319,33.0,Sun,2024-04-14,14:00,Liverpool,2.7,0–1,2.0,Crystal Palace,60090.0,Anfield,Chris Kavanagh,A
+320,33.0,Sun,2024-04-14,14:00,West Ham,0.9,0–2,3.2,Fulham,62459.0,London Stadium,Stuart Attwell,A
+321,33.0,Sun,2024-04-14,16:30,Arsenal,1.6,0–2,0.9,Aston Villa,60350.0,Emirates Stadium,David Coote,A
+322,33.0,Mon,2024-04-15,20:00,Chelsea,3.1,6–0,1.5,Everton,39392.0,Stamford Bridge,Paul Tierney,H
+323,34.0,Sat,2024-04-20,15:00,Sheffield Utd,2.4,1–4,2.2,Burnley,28964.0,Bramall Lane,Andy Madley,A
+324,34.0,Sat,2024-04-20,15:00,Luton Town,0.6,1–5,3.1,Brentford,11877.0,Kenilworth Road Stadium,Jarred Gillett,A
+325,34.0,Sat,2024-04-20,19:30,Wolves,0.2,0–2,1.2,Arsenal,31621.0,Molineux Stadium,Paul Tierney,A
+326,34.0,Sun,2024-04-21,13:30,Everton,0.3,2–0,0.9,Nott'ham Forest,39239.0,Goodison Park,Anthony Taylor,H
+327,34.0,Sun,2024-04-21,15:00,Crystal Palace,2.4,5–2,1.3,West Ham,25145.0,Selhurst Park,Graham Scott,H
+328,34.0,Sun,2024-04-21,15:00,Aston Villa,2.4,3–1,1.8,Bournemouth,42189.0,Villa Park,Tim Robinson,H
+329,34.0,Sun,2024-04-21,16:30,Fulham,0.8,1–3,1.0,Liverpool,24414.0,Craven Cottage,Craig Pawson,A
+330,29.0,Tue,2024-04-23,20:00,Arsenal,3.3,5–0,1.6,Chelsea,60238.0,Emirates Stadium,Simon Hooper,H
+331,29.0,Wed,2024-04-24,19:45,Wolves,0.5,0–1,1.9,Bournemouth,25541.0,Molineux Stadium,Stuart Attwell,A
+332,29.0,Wed,2024-04-24,20:00,Everton,1.2,2–0,2.1,Liverpool,38222.0,Goodison Park,Andy Madley,H
+333,29.0,Wed,2024-04-24,20:00,Manchester Utd,2.9,4–2,0.8,Sheffield Utd,73549.0,Old Trafford,Michael Salisbury,H
+334,29.0,Wed,2024-04-24,20:00,Crystal Palace,0.9,2–0,0.4,Newcastle Utd,25002.0,Selhurst Park,Thomas Bramall,H
+335,29.0,Thu,2024-04-25,20:00,Brighton,0.6,0–4,1.4,Manchester City,31596.0,The American Express Community Stadium,Jarred Gillett,A
+336,35.0,Sat,2024-04-27,12:30,West Ham,0.7,2–2,1.7,Liverpool,62474.0,London Stadium,Anthony Taylor,T
+337,35.0,Sat,2024-04-27,15:00,Wolves,1.2,2–1,0.6,Luton Town,31531.0,Molineux Stadium,David Coote,H
+338,35.0,Sat,2024-04-27,15:00,Manchester Utd,2.7,1–1,2.1,Burnley,73571.0,Old Trafford,John Brooks,T
+339,35.0,Sat,2024-04-27,15:00,Fulham,1.1,1–1,1.0,Crystal Palace,24142.0,Craven Cottage,Stuart Attwell,T
+340,35.0,Sat,2024-04-27,15:00,Newcastle Utd,3.1,5–1,1.5,Sheffield Utd,52196.0,St James' Park,Tony Harrington,H
+341,35.0,Sat,2024-04-27,17:30,Everton,0.8,1–0,0.9,Brentford,39098.0,Goodison Park,Darren England,H
+342,35.0,Sat,2024-04-27,20:00,Aston Villa,1.1,2–2,1.6,Chelsea,42354.0,Villa Park,Craig Pawson,T
+343,35.0,Sun,2024-04-28,14:00,Tottenham,2.3,2–3,1.0,Arsenal,61554.0,Tottenham Hotspur Stadium,Michael Oliver,A
+344,35.0,Sun,2024-04-28,14:00,Bournemouth,1.9,3–0,0.9,Brighton,11188.0,Vitality Stadium,Paul Tierney,H
+345,35.0,Sun,2024-04-28,16:30,Nott'ham Forest,1.9,0–2,0.9,Manchester City,29677.0,The City Ground,Simon Hooper,A
+346,26.0,Thu,2024-05-02,19:30,Chelsea,2.2,2–0,1.6,Tottenham,39086.0,Stamford Bridge,Robert Jones,H
+347,36.0,Fri,2024-05-03,20:00,Luton Town,0.8,1–1,1.4,Everton,11873.0,Kenilworth Road Stadium,Tim Robinson,T
+348,36.0,Sat,2024-05-04,12:30,Arsenal,3.3,3–0,0.5,Bournemouth,60348.0,Emirates Stadium,David Coote,H
+349,36.0,Sat,2024-05-04,15:00,Brentford,0.6,0–0,1.3,Fulham,17090.0,Gtech Community Stadium,Graham Scott,T
+350,36.0,Sat,2024-05-04,15:00,Burnley,1.0,1–4,3.4,Newcastle Utd,21781.0,Turf Moor,Anthony Taylor,A
+351,36.0,Sat,2024-05-04,15:00,Sheffield Utd,2.2,1–3,1.4,Nott'ham Forest,28516.0,Bramall Lane,Chris Kavanagh,A
+352,36.0,Sat,2024-05-04,17:30,Manchester City,3.7,5–1,0.3,Wolves,52439.0,Etihad Stadium,Craig Pawson,H
+353,36.0,Sun,2024-05-05,14:00,Brighton,2.5,1–0,0.1,Aston Villa,31596.0,The American Express Community Stadium,Robert Jones,H
+354,36.0,Sun,2024-05-05,14:00,Chelsea,4.1,5–0,0.9,West Ham,39295.0,Stamford Bridge,Andy Madley,H
+355,36.0,Sun,2024-05-05,16:30,Liverpool,3.3,4–2,1.2,Tottenham,60075.0,Anfield,Paul Tierney,H
+356,36.0,Mon,2024-05-06,20:00,Crystal Palace,1.7,4–0,0.4,Manchester Utd,25190.0,Selhurst Park,Jarred Gillett,H
+357,37.0,Sat,2024-05-11,12:30,Fulham,0.1,0–4,3.2,Manchester City,24418.0,Craven Cottage,Anthony Taylor,A
+358,37.0,Sat,2024-05-11,15:00,Newcastle Utd,2.2,1–1,1.4,Brighton,51997.0,St James' Park,Darren England,T
+359,37.0,Sat,2024-05-11,15:00,Tottenham,2.7,2–1,0.7,Burnley,61148.0,Tottenham Hotspur Stadium,Jarred Gillett,H
+360,37.0,Sat,2024-05-11,15:00,Wolves,1.6,1–3,2.6,Crystal Palace,31424.0,Molineux Stadium,Thomas Bramall,A
+361,37.0,Sat,2024-05-11,15:00,Bournemouth,0.7,1–2,1.1,Brentford,11154.0,Vitality Stadium,Matt Donohue,A
+362,37.0,Sat,2024-05-11,15:00,Everton,2.3,1–0,0.6,Sheffield Utd,39221.0,Goodison Park,Stuart Attwell,H
+363,37.0,Sat,2024-05-11,15:00,West Ham,3.2,3–1,0.3,Luton Town,62475.0,London Stadium,Michael Oliver,H
+364,37.0,Sat,2024-05-11,17:30,Nott'ham Forest,1.5,2–3,1.6,Chelsea,29708.0,The City Ground,Tony Harrington,A
+365,37.0,Sun,2024-05-12,16:30,Manchester Utd,0.5,0–1,1.5,Arsenal,73600.0,Old Trafford,Paul Tierney,A
+366,37.0,Mon,2024-05-13,20:00,Aston Villa,3.1,3–3,1.7,Liverpool,42241.0,Villa Park,Simon Hooper,T
+367,34.0,Tue,2024-05-14,20:00,Tottenham,1.7,0–2,2.4,Manchester City,61065.0,Tottenham Hotspur Stadium,Chris Kavanagh,A
+368,34.0,Wed,2024-05-15,19:45,Brighton,1.3,1–2,1.5,Chelsea,31555.0,The American Express Community Stadium,Michael Salisbury,A
+369,34.0,Wed,2024-05-15,20:00,Manchester Utd,1.5,3–2,2.2,Newcastle Utd,73582.0,Old Trafford,Robert Jones,H
+370,38.0,Sun,2024-05-19,16:00,Liverpool,4.5,2–0,0.5,Wolves,60059.0,Anfield,Chris Kavanagh,H
+371,38.0,Sun,2024-05-19,16:00,Luton Town,2.0,2–4,1.1,Fulham,12027.0,Kenilworth Road Stadium,Matt Donohue,A
+372,38.0,Sun,2024-05-19,16:00,Chelsea,1.1,2–1,2.2,Bournemouth,39724.0,Stamford Bridge,Anthony Taylor,H
+373,38.0,Sun,2024-05-19,16:00,Burnley,1.2,1–2,1.7,Nott'ham Forest,21109.0,Turf Moor,Graham Scott,A
+374,38.0,Sun,2024-05-19,16:00,Crystal Palace,2.5,5–0,0.9,Aston Villa,25191.0,Selhurst Park,Darren Bond,H
+375,38.0,Sun,2024-05-19,16:00,Brighton,1.7,0–2,1.3,Manchester Utd,31662.0,The American Express Community Stadium,Craig Pawson,A
+376,38.0,Sun,2024-05-19,16:00,Brentford,1.1,2–4,3.4,Newcastle Utd,17124.0,Gtech Community Stadium,Simon Hooper,A
+377,38.0,Sun,2024-05-19,16:00,Manchester City,1.9,3–1,0.4,West Ham,55097.0,Etihad Stadium,John Brooks,H
+378,38.0,Sun,2024-05-19,16:00,Arsenal,2.9,2–1,0.6,Everton,60312.0,Emirates Stadium,Michael Oliver,H
+379,38.0,Sun,2024-05-19,16:00,Sheffield Utd,1.0,0–3,3.1,Tottenham,29116.0,Bramall Lane,Andy Madley,A

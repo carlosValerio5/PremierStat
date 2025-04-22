@@ -65,6 +65,6 @@ public class PlayerContoller {
     @DeleteMapping("/{playerName}")
     public ResponseEntity<String> deletePlayer(@PathVariable String playerName) {
         playerService.removePlayer(playerName);
-        return new ResponseEntity<>("Player deleted succesfully", HttpStatus.OK);
+        return new ResponseEntity<>("Player deleted successfully", HttpStatus.OK);
     }
 }

@@ -43,9 +43,28 @@ CREATE TABLE csvs.teams_data(
 
 );
 
+CREATE TABLE csvs.matches(
+    match_id TEXT,
+    wk TEXT,
+    day TEXT,
+    date TEXT,
+    time_match TEXT,
+    home TEXT,
+    xg_home TEXT,
+    score TEXT,
+    xg_away TEXT,
+    away TEXT,
+    attendance TEXT,
+    venue TEXT,
+    referee TEXT,
+    result TEXT
+);
+
 \COPY csvs.players_data(name, Nation, Pos, Age, MP, Starts, Min, ninetys, Gls, Ast, PK, CrdY, CrdR, xG, npxG, xAG, PrgC, PrgP, Team) FROM '/home/carlitos/PremierStat/players.csv' DELIMITER ',' HEADER CSV;
 
 \COPY csvs.teams_data(name,Age,MP,Starts,Min,ninetys,Gls,Ast,PK,CrdY,CrdR,xG,npxG,xAG,PrgC,PrgP) FROM '/home/carlitos/PremierStat/teams.csv' DELIMITER ',' HEADER CSV;
+
+\COPY csvs.matches(match_id, wk, day, date, time, home, xg_home, score, xg_away, away, attendance, venue, referee, result) FROM '/home/carlitos/PremierStat/matches_cleaned.csv' DELIMITER ',' HEADER CSV;
 
 --altering squads column types
 --testing function to alter data types
@@ -134,9 +153,32 @@ SELECT alter_columns_to_type(
         ]
     );
 
+SELECT alter_columns_to_type(
+       'csvs.matches',
+       ARRAY [
+           'match_id,INT',
+           'wk,INT',
+           'day,TEXT',
+           'date,DATE',
+           'time_match,TIME',
+           'home,TEXT',
+           'xg_home,DOUBLE PRECISION',
+           'score,TEXT',
+           'xg_away,DOUBLE PRECISION',
+           'away,TEXT',
+           'attendance,BIGINT',
+           'venue,TEXT',
+           'referee,TEXT',
+           'result,TEXT'
+           ]
+       );
+
 
 ALTER TABLE csvs.players_data
 ADD CONSTRAINT player_pk PRIMARY KEY (name);
 
 ALTER TABLE csvs.teams_data
 ADD CONSTRAINT team_pk PRIMARY KEY (name);
+
+ALTER TABLE csvs.matches
+ADD CONSTRAINT match_pk PRIMARY KEY (match_id);
