@@ -12,82 +12,66 @@ public class PlayerCompareMapper implements Function<Player, PlayerCompareDTO> {
     @Override
     public PlayerCompareDTO apply(Player player) {
 
-        //90 minutes played
         Double ninetys = player.getNinetys();
 
-        //Expected goals
-        Double xg = player.getXg();
+        //Player info
+        String playerName = player.getName();
+        String teamName = player.getTeam();
+        String nation = player.getNation();
+        String position = player.getPos();
+        Integer age = player.getAge();
 
-        //Non-penalty expected goals
-        Double npxg = player.getNpxg();
 
-        //Expected assisted goals
-        Double xag = player.getXag();
+        //Statistics
+        Integer minutesPlayed = player.getMP();
+        Double xg = player.getXg(); //expected goals
+        Double npxg = player.getNpxg(); //non-penalty expected goals
+        Integer gls = player.getGls();
+        Integer ast = player.getAst();
+        Double xag = player.getXag(); //expected assist goals
 
-        double glsEfficiency;
-        double assistEfficiency;
+        //Stats per 90 minutes
+        Double glsPerNinety = ninetys == 0.0 ? 0.0 : gls/ninetys;
+        Double astPerNinety = ninetys == 0.0 ? 0.0 : ast/ninetys;
+        Double xagPerNinety = ninetys == 0.0 ? 0.0 : xag/ninetys;
+        Double xgPerNinety = ninetys == 0.0 ? 0.0 : gls/ninetys;
+        Double npxgPerNinety = ninetys == 0.0 ? 0.0 : npxg/ninetys;
 
-        try{
-            glsEfficiency = xg/(xg+npxg);
-        }catch (ArithmeticException e){
-            glsEfficiency = 0.0;
-        }
+        //Progression
+        Integer progressiveCarries = player.getPrgc(); //Progression carries
+        Integer progressivePasses = player.getPrgp(); //Progression passes
 
-        try{
-            assistEfficiency = xag/player.getAst();
-        }catch (ArithmeticException e){
-            assistEfficiency = 0.0;
-        }
 
-        if(ninetys == null || ninetys == 0.0){
-            return new PlayerCompareDTO(
-                    player.getName(),
-                    player.getTeam(),
-                    player.getNation(),
-                    player.getPos(),
-                    player.getAge(),
-                    player.getMP(),
-                    player.getXg(),
-                    player.getNpxg(),
-                    player.getGls(),
-                    player.getAst(),
-                    player.getXag(),
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    player.getPrgc(),
-                    player.getPrgp(),
-                    0.0,
-                    0.0,
-                    glsEfficiency,
-                    assistEfficiency
-            );
-        }
+        //Progression per 90 minutes
+        Double progressiveCarriesPerNinety = ninetys == 0.0 ? 0.0 : progressiveCarries/ninetys;
+        Double progressivePassesPerNinety = ninetys == 0.0 ? 0.0 : progressivePasses/ninetys;
+
+        //Efficiency stats
+        Double goalEfficiency = (xg == 0.0 || npxg == 0.0) ? 0.0 : gls/xg+npxg;
+        Double assistEfficiency = (xag == 0.0) ? 0.0 : astPerNinety/ast;
 
         return new PlayerCompareDTO(
-                player.getName(),
-                player.getTeam(),
-                player.getNation(),
-                player.getPos(),
-                player.getAge(),
-                player.getMP(),
-                player.getXg(),
-                player.getNpxg(),
-                player.getGls(),
-                player.getAst(),
-                player.getXag(),
-                player.getGls()/ninetys,
-                player.getAst()/ninetys,
-                player.getXag()/ninetys,
-                player.getXg()/ninetys,
-                player.getNpxg()/ninetys,
-                player.getPrgc(),
-                player.getPrgp(),
-                player.getPrgc()/ninetys,
-                player.getPrgp()/ninetys,
-                glsEfficiency,
+                playerName,
+                teamName,
+                nation,
+                position,
+                age,
+                minutesPlayed,
+                xg,
+                npxg,
+                gls,
+                ast,
+                xag,
+                glsPerNinety,
+                astPerNinety,
+                xagPerNinety,
+                xgPerNinety,
+                npxgPerNinety,
+                progressiveCarries,
+                progressivePasses,
+                progressiveCarriesPerNinety,
+                progressivePassesPerNinety,
+                goalEfficiency,
                 assistEfficiency
         );
     }
