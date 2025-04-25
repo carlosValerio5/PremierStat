@@ -9,11 +9,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path="api/v1/player")
-public class PlayerContoller {
+public class PlayerController {
     private final PlayerService playerService;
 
     @Autowired
-    public PlayerContoller(PlayerService playerService) {
+    public PlayerController(PlayerService playerService) {
         this.playerService = playerService;
     }
 

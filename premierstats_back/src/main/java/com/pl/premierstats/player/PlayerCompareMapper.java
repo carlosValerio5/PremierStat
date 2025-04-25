@@ -34,7 +34,7 @@ public class PlayerCompareMapper implements Function<Player, PlayerCompareDTO> {
         Double glsPerNinety = ninetys == 0.0 ? 0.0 : gls/ninetys;
         Double astPerNinety = ninetys == 0.0 ? 0.0 : ast/ninetys;
         Double xagPerNinety = ninetys == 0.0 ? 0.0 : xag/ninetys;
-        Double xgPerNinety = ninetys == 0.0 ? 0.0 : gls/ninetys;
+        Double xgPerNinety = ninetys == 0.0 ? 0.0 : xg/ninetys;
         Double npxgPerNinety = ninetys == 0.0 ? 0.0 : npxg/ninetys;
 
         //Progression
@@ -47,8 +47,8 @@ public class PlayerCompareMapper implements Function<Player, PlayerCompareDTO> {
         Double progressivePassesPerNinety = ninetys == 0.0 ? 0.0 : progressivePasses/ninetys;
 
         //Efficiency stats
-        Double goalEfficiency = (xg == 0.0 || npxg == 0.0) ? 0.0 : gls/xg+npxg;
-        Double assistEfficiency = (xag == 0.0) ? 0.0 : astPerNinety/ast;
+        Double goalEfficiency = (xg == 0.0) ? 0.0 : gls/xg;
+        Double assistEfficiency = (xag == 0.0) ? 0.0 : ast/xag;
 
         return new PlayerCompareDTO(
                 playerName,

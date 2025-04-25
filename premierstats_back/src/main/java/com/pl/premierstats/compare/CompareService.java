@@ -5,6 +5,8 @@ import com.pl.premierstats.player.PlayerCompareDTO;
 import com.pl.premierstats.player.PlayerCompareMapper;
 import com.pl.premierstats.player.PlayerRepository;
 import com.pl.premierstats.team.Team;
+import com.pl.premierstats.team.TeamCompareDTO;
+import com.pl.premierstats.team.TeamCompareMapper;
 import com.pl.premierstats.team.TeamRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -25,7 +27,7 @@ public class CompareService {
         this.teamRepository = teamRepository;
     }
 
-    public List<PlayerCompareDTO> comparePlayers(List<String> playerNames){
+    public List<PlayerCompareDTO> comparePlayers(List<String> playerNames) throws PlayerNotFoundException{
 
         //list of comparable players
         List<PlayerCompareDTO> compareDTOs = new ArrayList<>();
@@ -34,11 +36,15 @@ public class CompareService {
         PlayerCompareMapper playerCompareMapper = new PlayerCompareMapper();
 
 
-        for (String name : names) {
+        for (String name : playerNames) {
             Optional<Player> foundPlayer = playerRepository.findByName(name);
 
             foundPlayer.ifPresent(player -> compareDTOs.add(playerCompareMapper.apply(player)));
 
+        }
+
+        if(compareDTOs.isEmpty()){
+            throw new PlayerNotFoundException("There are no players with this name.");
         }
 
         return compareDTOs;
@@ -46,5 +52,17 @@ public class CompareService {
 
     public List<TeamCompareDTO> compareTeams(List<String> teamNames){
 
+        //List of comparable teams
+        List<TeamCompareDTO> compareDTOs = new ArrayList<>();
+
+        TeamCompareMapper teamCompareMapper = new TeamCompareMapper();
+
+        for (String name : teamNames) {
+            Optional<Team> foundTeam = teamRepository.findByName(name);
+
+            foundTeam.ifPresent(team -> compareDTOs.add(teamCompareMapper.apply(team)));
+        }
+
+        return compareDTOs;
     }
 }
