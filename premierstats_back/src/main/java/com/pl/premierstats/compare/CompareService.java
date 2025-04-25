@@ -43,7 +43,7 @@ public class CompareService {
 
         }
 
-        if(compareDTOs.isEmpty()){
+        if(compareDTOs.isEmpty() || compareDTOs.size() == 1) {
             throw new PlayerNotFoundException("There are no players with this name.");
         }
 
