@@ -16,7 +16,7 @@ public record PlayerCompareDTO(
         Integer age,
 
         //Player statistics
-        Integer minutesPlayed,
+        Integer matchesPlayed,
         Double xg, //expected goals
         Double npxg, //non-penalty expected goals
         Integer gls,
