@@ -53,11 +53,36 @@ def main():
     stat_data_frame.to_csv('stats.csv', index=False) #create csv file out of pandas dataframe
 
 #cleaning index
-def read_csv():
-    df = pd.read_csv('stats.csv')
-    df = df.drop("Unnamed: 0", axis=1)
+def clean_csv(df):
+
     df.to_csv('stats.csv', index=False)
     print(df)
 
+
+#Note: use the matches.ipynb notebook to correctly format the data
+def pull_matches():
+    url = "https://fbref.com/en/comps/9/2023-2024/schedule/2023-2024-Premier-League-Scores-and-Fixtures"
+    request = requests.get(url)
+
+    if request.status_code != 200:
+        print("Request failed")
+        print(request.status_code)
+        return
+
+    content = request.text
+    soup = BeautifulSoup(content, 'lxml')
+    table = soup.find_all('table', class_="stats_table")
+
+
+    matchStats = pd.read_html(StringIO(str(table)))[0]
+
+    #drop index
+    if isinstance(matchStats.columns, pd.MultiIndex):
+        matchStats.columns = matchStats.columns.droplevel()
+
+    matchStats.to_csv('match_stats.csv', index=False)
+
+
 if __name__ == "__main__":
     main()
+    pull_matches()
