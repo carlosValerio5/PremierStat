@@ -7,7 +7,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -38,9 +37,19 @@ public class CompareController {
         return new ResponseEntity<>(comparablePlayers, HttpStatus.OK);
     }
 
-    @RequestMapping(method=RequestMethod.GET, params="team")
-    public List<TeamCompareDTO> compareTeam(@RequestParam String team1, @RequestParam String team2){
-        return null;
+    @RequestMapping(method=RequestMethod.GET, params={"team1", "team2"})
+    public ResponseEntity<List<TeamCompareDTO>> compareTeam(@RequestParam String team1, @RequestParam String team2){
+        List<TeamCompareDTO> comparableTeams;
+
+        try{
+            comparableTeams = compareService.compareTeams(Arrays.asList(team1, team2));
+        }catch (TeamNotFoundException e){
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }catch (Exception e){
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
+        return new ResponseEntity<>(comparableTeams, HttpStatus.OK);
     }
 
 }

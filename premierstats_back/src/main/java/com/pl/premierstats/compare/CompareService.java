@@ -50,7 +50,7 @@ public class CompareService {
         return compareDTOs;
     }
 
-    public List<TeamCompareDTO> compareTeams(List<String> teamNames){
+    public List<TeamCompareDTO> compareTeams(List<String> teamNames) throws TeamNotFoundException{
 
         //List of comparable teams
         List<TeamCompareDTO> compareDTOs = new ArrayList<>();
@@ -58,9 +58,13 @@ public class CompareService {
         TeamCompareMapper teamCompareMapper = new TeamCompareMapper();
 
         for (String name : teamNames) {
-            Optional<Team> foundTeam = teamRepository.findByName(name);
+            Optional<Team> foundTeam = teamRepository.findTop1ByNameIgnoreCaseContaining(name);
 
             foundTeam.ifPresent(team -> compareDTOs.add(teamCompareMapper.apply(team)));
+        }
+
+        if(compareDTOs.isEmpty() || compareDTOs.size() == 1) {
+            throw new TeamNotFoundException("There are no matching teams with this name");
         }
 
         return compareDTOs;
