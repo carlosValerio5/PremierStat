@@ -4,6 +4,7 @@ import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -42,6 +43,21 @@ public class MatchService {
     public List<Match> getMatchesByVenue(String venue) {
         return matchRepository.findAll().stream().filter(
                 match -> match.getVenue().equals(venue)
+        ).collect(Collectors.toList());
+    }
+
+    public List<Match> getMatchesByDate(LocalDate date) {
+        return matchRepository.findAll().stream().filter(
+                match -> match.getDate().equals(date)
+        ).collect(Collectors.toList());
+    }
+
+    //Get matches by team AND date, team can match with away and home team
+    public List<Match> getMatchesByDateAndTeam(LocalDate date, String team) {
+        return matchRepository.findAll().stream().filter(
+                match -> match.getDate().equals(date)
+                        && match.getAway().equals(team)
+                        || match.getHome().equals(team)
         ).collect(Collectors.toList());
     }
 
