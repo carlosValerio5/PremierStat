@@ -12,8 +12,8 @@ import user6 from "../assets/profile-pictures/user6.jpg";
 
 export const navItems = [
   { label: "Players", href: "/players" },
-  { label: "Teams", href: "#" },
-  { label: "Matches", href: "#" },
+  { label: "Teams", href: "/teams" },
+  { label: "Matches", href: "/matches" },
   { label: "Compare", href: "#" },
 ];
 
