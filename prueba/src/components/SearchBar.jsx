@@ -27,7 +27,7 @@ const SearchBar = ({setResults}) => {
         <div className="pt-20 w-2/5 m-auto flex flex-col items-center justify-center text-center min-w-200px">
             <div className="bg-neutral-600/50 w-full rounded-lg py-2 px-15px flex items-center justify-center">
                 <Search className="mx-3 text-orange-500/90"/>
-                <input placeholder="SearchBar for players" className="bg-transparent border-0 h-full text-xl w-full
+                <input placeholder="Search for players" className="bg-transparent border-0 h-full text-xl w-full
                 ml-1.5 focus:outline-hidden" value={input} onChange={(e) => handleChange(e.target.value)} />
             </div>
         </div>

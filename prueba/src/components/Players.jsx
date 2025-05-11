@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import {useEffect, useState} from "react";
 import SearchBar from "./SearchBar.jsx";
 import SearchResults from "./SearchResults.jsx";
+import TopScorers from "./TopScorers.jsx";
 
 
 const Players = () => {
@@ -30,14 +31,19 @@ const Players = () => {
 
     return (
         <div>
-            <h1>Players</h1>
+            <h1 className="text-5xl font-bold">Players</h1>
             <SearchBar setResults={setResults} />
             <SearchResults results={results} />
+            <div className="mt-20">
+                <TopScorers />
+            </div>
+            {/*}
             {players.map((player, index) => (
                 <div key={index} className="player">
                     <ul>{player.name}</ul>
                 </div>
             ))}
+            {*/}
         </div>
     )
 }
