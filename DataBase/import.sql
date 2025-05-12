@@ -182,3 +182,30 @@ ADD CONSTRAINT team_pk PRIMARY KEY (name);
 
 ALTER TABLE csvs.matches
 ADD CONSTRAINT match_pk PRIMARY KEY (match_id);
+
+
+UPDATE csvs.players_data SET gls = 0 WHERE gls IS NULL;
+UPDATE csvs.players_data SET prgp = 0 WHERE prgp IS NULL;
+
+ALTER TABLE csvs.players_data
+ADD COLUMN z_progressive_passes DOUBLE PRECISION,
+ADD COLUMN z_assists DOUBLE PRECISION,
+ADD COLUMN z_xag DOUBLE PRECISION;
+
+WITH stats AS (
+    SELECT
+        AVG(prgp) AS mean_pp,
+        STDDEV(prgp) AS std_pp,
+        AVG(ast) AS mean_ast,
+        STDDEV(ast) AS std_ast,
+        AVG(xag) AS mean_xag,
+        STDDEV(xag) AS std_xag
+    FROM csvs.players_data
+)
+UPDATE csvs.players_data
+SET
+    z_progressive_passes = (prgp - stats.mean_pp) / NULLIF(stats.std_pp, 0),
+    z_assists = (ast - stats.mean_ast) / NULLIF(stats.std_ast, 0),
+    z_xag = (xag - stats.mean_xag) / NULLIF(stats.std_xag, 0)
+FROM stats;
+
