@@ -18,6 +18,16 @@ public class PlayerController {
         this.playerService = playerService;
     }
 
+    @GetMapping("/top-scorers")
+    public List<Player> getTopScorers() {
+        return playerService.getTopScorers();
+    }
+
+    @GetMapping("/top-playmakers")
+    public List<Player> getTopPlaymakers() {
+        return playerService.getTopPlayMakers();
+    }
+
     @GetMapping
     public List<Player> getPlayers(
             @RequestParam(required = false) String team,

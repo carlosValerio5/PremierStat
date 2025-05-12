@@ -23,7 +23,7 @@ public class TeamService {
 
     public List<Team> getTeamByName(String teamName){
         return teamRepository.findAll().stream()
-                .filter(team -> team.getName().equalsIgnoreCase(teamName))
+                .filter(team -> team.getName().toLowerCase().contains(teamName.toLowerCase()))
                 .collect(Collectors.toList());
     }
 

@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.PriorityQueue;
 import java.util.stream.Collectors;
 
 @Component
@@ -77,8 +78,40 @@ public class PlayerService {
         return null;
     }
 
+    public List<Player> getTopScorers(){
+        return playerRepository.findTop5ByOrderByGlsDesc();
+    }
+
     @Transactional
     public void removePlayer(String playerName) {
         playerRepository.deleteByName(playerName);
+    }
+
+    public List<Player> getTopPlayMakers(){
+        double xAgWeight = 0.3;
+        double prgpWeight = 0.4;
+        double asstWeight = 0.3;
+
+        PriorityQueue<Player> players = new PriorityQueue<>(new PlayerPlayMakerComparator());
+
+        for(Player player : getPlayers()){
+
+            Double playmakerScore = safe(player.getzXag()) * xAgWeight + safe(player.getzProgressivePasses()) * prgpWeight
+                    + safe(player.getzAssists()) * asstWeight;
+
+            player.setPlayMakerScore(playmakerScore);
+
+            players.add(player);
+
+            if(players.size() > 5){
+                players.poll();
+            }
+        }
+
+        return players.stream().toList();
+    }
+
+    private double safe(Double value){
+        return value != null ? value : 0.0;
     }
 }

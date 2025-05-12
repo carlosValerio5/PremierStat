@@ -1,9 +1,8 @@
 package com.pl.premierstats.player;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+
+import java.util.Comparator;
 
 @Entity
 @Table(name="players_data", schema = "csvs")
@@ -30,6 +29,13 @@ public class Player {
     private Integer prgc;
     private Integer prgp;
     private String team;
+    private Double zProgressivePasses;
+    private Double zAssists;
+    private Double zXag;
+
+    //This field is not present in the database
+    @Transient
+    private Double playMakerScore;
 
     //Constructors
 
@@ -227,5 +233,48 @@ public class Player {
 
     public void setXg(Double xg) {
         this.xg = xg;
+    }
+
+    public Double getzProgressivePasses() {
+        return zProgressivePasses;
+    }
+
+    public void setzProgressivePasses(Double zProgressivePasses) {
+        this.zProgressivePasses = zProgressivePasses;
+    }
+
+    public Double getzAssists() {
+        return zAssists;
+    }
+
+    public void setzAssists(Double zAssists) {
+        this.zAssists = zAssists;
+    }
+
+    public Double getzXag() {
+        return zXag;
+    }
+
+    public void setzXag(Double zXag) {
+        this.zXag = zXag;
+    }
+
+    public Double getPlayMakerScore() {
+        return playMakerScore;
+    }
+
+    public void setPlayMakerScore(Double playMakerScore) {
+        this.playMakerScore = playMakerScore;
+    }
+}
+
+/**
+ * Calse que sirve para comparar dos jugadores basado en su nota
+ * de playmaker
+ */
+class PlayerPlayMakerComparator implements Comparator<Player> {
+    @Override
+    public int compare(Player o1, Player o2) {
+        return o1.getPlayMakerScore().compareTo(o2.getPlayMakerScore());
     }
 }
