@@ -3,6 +3,7 @@ import {useEffect, useState} from "react";
 import SearchBar from "./SearchBar.jsx";
 import SearchResults from "./SearchResults.jsx";
 import TopScorers from "./TopScorers.jsx";
+import TopPlayMakers from "./TopPlayMakers.jsx";
 
 
 const Players = () => {
@@ -36,6 +37,7 @@ const Players = () => {
             <SearchResults results={results} />
             <div className="mt-20">
                 <TopScorers />
+                <TopPlayMakers />
             </div>
             {/*}
             {players.map((player, index) => (

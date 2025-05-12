@@ -65,7 +65,7 @@ const TopScorers = () => {
         };
 
         fetchPlayer();
-    }, [name]);
+    }, []);
 
     if (loading) return <div className="p-4">Loading...</div>;
     if (error) return <div className="p-4 text-red-500">{error}</div>;
