@@ -10,15 +10,16 @@ import Matches from "./components/Matches.jsx";
 import Prueba from "./components/PlayerDashboard.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Layout from "./components/Layout.jsx";
+import PlayerDashboard from "./components/PlayerDashboard.jsx";
 
 const router = createBrowserRouter([
     {path: "/", element: <Layout />,
         children: [
             {index: true, element: <App />},
-            {path: "/players/:name?", element: <Players />},
+            {path: "/players", element: <Players />},
             {path: "/teams/:name?", element: <Teams />},
             {path: "/matches/:id?", element: <Matches />},
-            {path: "/players/dashboard/:name", element: <Prueba />},
+            {path: "players/:name", element: <PlayerDashboard />},
         ]
     },
     {path: "*", element: <PageNotFound />}

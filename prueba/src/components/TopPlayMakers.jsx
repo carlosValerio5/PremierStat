@@ -64,9 +64,9 @@ const TopPlayMakers = ({
 
     const normalizedPlayMakers = playMakers.map((d) => ({
         ...d,
-        xag: parseFloat(d.xag) || 0,
-        ast: parseFloat(d.ast) || 0,
-        prgp: parseFloat(d.prgp) || 0,
+        xag: parseFloat(d.zXag) || 0,
+        ast: parseFloat(d.zAssists) || 0,
+        prgp: parseFloat(d.zProgressivePasses) || 0,
     }));
 
 

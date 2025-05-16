@@ -6,6 +6,7 @@ const PlayerDashboard = () => {
     const [player, setPlayer] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [classification, setClassification] = useState(null);
 
     useEffect(() => {
         const fetchPlayer = async () => {
@@ -13,6 +14,7 @@ const PlayerDashboard = () => {
                 const response = await fetch(`http://localhost:8080/api/v1/player?name=${name}`);
                 const data = await response.json();
                 setPlayer(data[0]); // assuming the API returns an array
+                console.log(data);
             } catch (err) {
                 setError("Failed to fetch player data.");
             } finally {
@@ -23,28 +25,95 @@ const PlayerDashboard = () => {
         fetchPlayer();
     }, [name]);
 
+    useEffect(() => {
+        if (player) {
+            setClassification(clasifyPlayer(player));
+        }
+    },[player]);
+
+    const clasifyPlayer = (player) => {
+        const position = player.pos;
+        if(position.includes("GK")){
+            return "N/A";
+        }
+        else if(position.includes("FW")){
+            if(player.ast > player.xag || player.gls > player.xg){
+                return "Overperformer";
+            }
+            else if (player.ast < player.xag && player.gls < player.xg){
+                return "Underperformer";
+            }
+            else{
+                return "Regular Performance"
+            }
+        }
+        else if(position.includes("MF")){
+
+            //El Promedio de progressive carries es 24.56 para mediocampistas
+            const avgPrgc = 28.335;
+
+            //El promedio de progressive passes es 39.51 para mediocampistas
+            const avgPrgp = 48.43;
+            if(player.prgc > avgPrgc || player.prgp > avgPrgp){
+                return "Overperformer";
+            }
+            else if(player.prgc < avgPrgc && player.prgp < avgPrgp){
+                return "Underperformer";
+            }else{
+                return "Regular Performance"
+            }
+        }
+        else if(position.includes("DF")){
+
+            //Promedio de tarjetas rojas en la temporada para defensivos
+            const avgCrdr = 0.154;
+
+            //Promedio de tarjetas amarillas en la temporada para defensivos
+            const avgCrdy = 3.367;
+
+            if(player.crdr > avgCrdr || player.crdy > avgCrdy){
+                return "Aggressive";
+            }
+            else if(player.crdr< avgCrdr && player.crdy < avgCrdy){
+                return "Pacifist";
+            }
+            else {
+                return "Controlled"
+            }
+
+        }
+    }
+
     if (loading) return <div className="p-4">Loading...</div>;
     if (error) return <div className="p-4 text-red-500">{error}</div>;
     if (!player) return <div className="p-4">No player found.</div>;
 
     return (
-        <div className="max-w-3xl mx-auto p-6 bg-white rounded-xl shadow-md mt-6 text-black">
-            <h1 className="text-2xl font-bold mb-4">{player.name}</h1>
-            <div className="grid grid-cols-2 gap-4">
-                <div>
-                    <p><strong>Club:</strong> {player.team}</p>
-                    <p><strong>Position:</strong> {player.pos}</p>
-                    <p><strong>Nationality:</strong> {player.nation}</p>
-                    <p><strong>Age:</strong> {player.age}</p>
-                </div>
-                <div>
-                    <p><strong>Appearances:</strong> {player.mp}</p>
-                    <p><strong>Goals:</strong> {player.gls}</p>
-                    <p><strong>Assists:</strong> {player.ast}</p>
-                    <p><strong>Minutes:</strong> {player.min}</p>
+        <>
+            <div className="flex justify-center">
+                <h1 className="bg-gradient-to-b from-orange-500 to-red-800 py-3 px-4 mx-3 rounded-md text-2xl">
+                    {classification}
+                </h1>
+            </div>
+            <div className="max-w-3xl mx-auto p-6 bg-white rounded-xl shadow-md mt-6 text-black">
+                <h1 className="text-2xl font-bold mb-4">{player.name}</h1>
+                <div className="grid grid-cols-2 gap-4">
+                    <div>
+                        <p><strong>Club:</strong> {player.team}</p>
+                        <p><strong>Position:</strong> {player.pos}</p>
+                        <p><strong>Nationality:</strong> {player.nation}</p>
+                        <p><strong>Age:</strong> {player.age}</p>
+                    </div>
+                    <div>
+                        <p><strong>Appearances:</strong> {player.mp}</p>
+                        <p><strong>Goals:</strong> {player.gls}</p>
+                        <p><strong>Assists:</strong> {player.ast}</p>
+                        <p><strong>Minutes:</strong> {player.min}</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
+
     );
 };
 
