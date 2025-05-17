@@ -33,6 +33,12 @@ public class Player {
     private Double zAssists;
     private Double zXag;
 
+    @Column(name="z_goals")
+    private Double zGoals;
+
+    @Column(name="z_xg")
+    private Double zXg;
+
     //This field is not present in the database
     @Transient
     private Double playMakerScore;
@@ -58,7 +64,7 @@ public class Player {
 
     public Player(Integer age, Integer ast, Integer crdr, Integer crdy, Integer gls, Double min, Integer MP, String name,
                   String nation, Double ninetys, Double npxg, Integer pk, String pos, Integer prgc, Integer prgp,
-                  Integer starts, String team, Double xag, Double xg) {
+                  Integer starts, String team, Double xag, Double xg, Double zGoals, Double zXg) {
         this.age = age;
         this.ast = ast;
         this.crdr = crdr;
@@ -78,10 +84,28 @@ public class Player {
         this.team = team;
         this.xag = xag;
         this.xg = xg;
+        this.zGoals = zGoals;
+        this.zXg = zXg;
     }
 
     //Getters and Setters
 
+
+    public Double getzGoals() {
+        return zGoals;
+    }
+
+    public void setzGoals(Double zGoals) {
+        this.zGoals = zGoals;
+    }
+
+    public Double getzXg() {
+        return zXg;
+    }
+
+    public void setzXg(Double zXg) {
+        this.zXg = zXg;
+    }
 
     public Integer getAge() {
         return age;
