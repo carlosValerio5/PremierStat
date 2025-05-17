@@ -14,7 +14,7 @@ export const navItems = [
   { label: "Players", href: "/players" },
   { label: "Teams", href: "/teams" },
   { label: "Matches", href: "/matches" },
-  { label: "Compare", href: "#" },
+  { label: "Compare", href: "/compare" },
 ];
 
 export const testimonials = [
