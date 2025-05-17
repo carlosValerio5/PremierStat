@@ -190,7 +190,10 @@ UPDATE csvs.players_data SET prgp = 0 WHERE prgp IS NULL;
 ALTER TABLE csvs.players_data
 ADD COLUMN z_progressive_passes DOUBLE PRECISION,
 ADD COLUMN z_assists DOUBLE PRECISION,
-ADD COLUMN z_xag DOUBLE PRECISION;
+ADD COLUMN z_xag DOUBLE PRECISION,
+ADD COLUMN z_xg DOUBLE PRECISION,
+ADD COLUMN z_goals DOUBLE PRECISION;
+
 
 WITH stats AS (
     SELECT
@@ -199,13 +202,18 @@ WITH stats AS (
         AVG(ast) AS mean_ast,
         STDDEV(ast) AS std_ast,
         AVG(xag) AS mean_xag,
-        STDDEV(xag) AS std_xag
+        STDDEV(xag) AS std_xag,
+        AVG(gls) AS mean_gls,
+        STDDEV(gls) AS std_gls,
+        AVG(xg) AS mean_xg,
+        STDDEV(xg) AS std_xg
     FROM csvs.players_data
 )
 UPDATE csvs.players_data
 SET
     z_progressive_passes = (prgp - stats.mean_pp) / NULLIF(stats.std_pp, 0),
     z_assists = (ast - stats.mean_ast) / NULLIF(stats.std_ast, 0),
-    z_xag = (xag - stats.mean_xag) / NULLIF(stats.std_xag, 0)
+    z_xag = (xag - stats.mean_xag) / NULLIF(stats.std_xag, 0),
+    z_goals = (gls - stats.mean_gls) / NULLIF(stats.std_gls, 0),
+    z_xg = (xg-stats.mean_xg) / NULLIF(stats.std_xg, 0)
 FROM stats;
-
