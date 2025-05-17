@@ -21,6 +21,11 @@ public class MatchController {
         this.matchService = matchService;
     }
 
+    @GetMapping("/all")
+    public ResponseEntity<List<Match>> getAll(String pattern) {
+        return new ResponseEntity<>(matchService.getMatchesByParams(pattern), HttpStatus.OK);
+    }
+
     @GetMapping
     public ResponseEntity<List<Match>> getMatches(
             @RequestParam(required = false) Integer id,

@@ -36,13 +36,14 @@ public class MatchService {
 
     public List<Match> getMatchesByTeam(String team) {
         return matchRepository.findAll().stream().filter(
-                match -> match.getAway().equals(team) || match.getHome().equals(team)
+                match -> match.getAway().toLowerCase().contains(team.toLowerCase())
+                        || match.getHome().toLowerCase().contains(team.toLowerCase())
         ).collect(Collectors.toList());
     }
 
     public List<Match> getMatchesByVenue(String venue) {
         return matchRepository.findAll().stream().filter(
-                match -> match.getVenue().equals(venue)
+                match -> match.getVenue().toLowerCase().contains(venue.toLowerCase())
         ).collect(Collectors.toList());
     }
 
@@ -56,8 +57,8 @@ public class MatchService {
     public List<Match> getMatchesByDateAndTeam(LocalDate date, String team) {
         return matchRepository.findAll().stream().filter(
                 match -> match.getDate().equals(date)
-                        && match.getAway().equals(team)
-                        || match.getHome().equals(team)
+                        && match.getAway().toLowerCase().contains(team.toLowerCase())
+                        || match.getHome().toLowerCase().contains(team.toLowerCase())
         ).collect(Collectors.toList());
     }
 
@@ -78,6 +79,13 @@ public class MatchService {
             return matchToUpdate;
         }
         throw new MatchNotFoundException("Match not found");
+    }
+
+    public List<Match> getMatchesByParams(String param){
+        if(param != null && !param.isEmpty()){
+            return matchRepository.searchAll(param);
+        }
+        return matchRepository.findAll();
     }
 
     @Transactional
