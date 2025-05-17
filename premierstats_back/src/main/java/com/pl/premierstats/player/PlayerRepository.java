@@ -15,4 +15,6 @@ public interface PlayerRepository extends JpaRepository<Player, String> {
     Optional<Player> findByName(String playerName);
 
     List<Player> findTop5ByOrderByGlsDesc();
+
+    Optional<Player> findTop1ByNameContainingIgnoreCase(String name);
 }

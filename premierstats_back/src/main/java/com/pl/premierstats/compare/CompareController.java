@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Arrays;
 import java.util.List;
 
+@CrossOrigin(origins="http://localhost:5173")
 @RestController
 @RequestMapping(path="api/v1/compare")
 public class CompareController {

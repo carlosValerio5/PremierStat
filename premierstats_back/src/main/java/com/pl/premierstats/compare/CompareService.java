@@ -37,7 +37,7 @@ public class CompareService {
 
 
         for (String name : playerNames) {
-            Optional<Player> foundPlayer = playerRepository.findByName(name);
+            Optional<Player> foundPlayer = playerRepository.findTop1ByNameContainingIgnoreCase(name);
 
             foundPlayer.ifPresent(player -> compareDTOs.add(playerCompareMapper.apply(player)));
 
