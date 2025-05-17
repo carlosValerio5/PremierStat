@@ -9,8 +9,6 @@ import {defaultStyles, useTooltip, TooltipWithBounds} from "@visx/tooltip"
 import {localPoint} from "@visx/event"
 import {TouchEvent, MouseEvent} from "react";
 
-const data = appleStock.slice(0, 10);
-
 const margin = 32;
 
 const defaultWidth = 100;

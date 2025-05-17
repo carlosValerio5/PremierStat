@@ -1,5 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import PlayerBarChart from "./PlayerBarChart.jsx";
+import RadialPlayer from "./RadialPlayer.jsx";
 
 const PlayerDashboard = () => {
     const { name } = useParams();
@@ -13,8 +15,8 @@ const PlayerDashboard = () => {
             try {
                 const response = await fetch(`http://localhost:8080/api/v1/player?name=${name}`);
                 const data = await response.json();
-                setPlayer(data[0]); // assuming the API returns an array
                 console.log(data);
+                setPlayer(data[0]); // assuming the API returns an array
             } catch (err) {
                 setError("Failed to fetch player data.");
             } finally {
@@ -111,6 +113,15 @@ const PlayerDashboard = () => {
                         <p><strong>Minutes:</strong> {player.min}</p>
                     </div>
                 </div>
+            </div>
+            <h2 className="text-4xl mt-10 font-bold">{player.name}'s { } performance</h2>
+            <div className="flex justify-start gap-4">
+                <PlayerBarChart player={player} type="goals"/>
+                <PlayerBarChart player={player} type="assists"/>
+
+            </div>
+            <div>
+                <RadialPlayer player={player} />
             </div>
         </>
 
