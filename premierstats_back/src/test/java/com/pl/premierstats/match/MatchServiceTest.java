@@ -17,7 +17,7 @@ public class MatchServiceTest {
 
     @Test
     public void getMatchByIdTest() throws MatchNotFoundException {
-        assert matchService.getMatchById(1)
+        assert matchService.getMatchById(1) != null;
     }
 
 }
