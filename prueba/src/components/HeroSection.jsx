@@ -21,7 +21,7 @@ function HeroSection() {
                 Unlock powerful insights from the world’s greatest soccer league. PremierStat delivers compelling stats and smart tools to elevate your game.
             </p>
             <div className="flex justify-center my-10">
-                <a href="#" className="bg-gradient-to-r from-orange-500 to-red-800 py-3 px-4 mx-3 rounded-md">
+                <a href="/players" className="bg-gradient-to-r from-orange-500 to-red-800 py-3 px-4 mx-3 rounded-md">
                     Start for free
                 </a>
             </div>

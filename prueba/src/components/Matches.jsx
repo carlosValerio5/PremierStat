@@ -1,4 +1,3 @@
-import { useParams } from "react-router-dom";
 import {useState, useEffect} from "react";
 
 const Matches = () => {
@@ -8,7 +7,7 @@ const Matches = () => {
 
     const [matches, setMatches] = useState([]);
 
-    const fetchMatches = async (pattern) => {
+    const fetchMatches = async (pattern="") => {
         const response = await fetch(`${API_URL}${pattern}`)
             .then((res) => res.json())
             .then((data) => setMatches(data))
