@@ -33,7 +33,7 @@ const Players = () => {
     return (
         <div>
             <h1 className="text-5xl font-bold">Players</h1>
-            <SearchBar setResults={setResults} />
+            <SearchBar setResults={setResults} reuse={false} />
             <SearchResults results={results} />
             <div className="mt-20">
                 <TopScorers />

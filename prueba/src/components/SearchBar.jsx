@@ -1,7 +1,7 @@
 import {Search} from "lucide-react"
 import {useState} from "react";
 
-const SearchBar = ({setResults}) => {
+const SearchBar = ({setResults, reuse}) => {
 
     const [input, setInput] = useState("");
 
@@ -10,12 +10,17 @@ const SearchBar = ({setResults}) => {
             setResults([]);
             return;
         }
-        fetch(`http://localhost:8080/api/v1/player?name=${value}`)
-            .then(res => res.json())
-            .then(data => {
-                setResults(data);
-            })
-            .catch(error => console.log(error));
+        if(!reuse){
+            fetch(`http://localhost:8080/api/v1/player?name=${value}`)
+                .then(res => res.json())
+                .then(data => {
+                    setResults(data);
+                })
+                .catch(error => console.log(error));
+        }
+        else{
+            setResults(value);
+        }
     };
 
     const handleChange = (value) => {

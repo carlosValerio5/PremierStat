@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import SearchBar from "./SearchBar.jsx";
 
 const API_URL = 'http://localhost:8080/api/v1/compare';
 
@@ -71,12 +72,10 @@ const PlayerCompare = () => {
             </h1>
             <div className="mt-10 gap-0 columns-1 sm:columns-2">
                 <div>
-                    <input placeholder="Search a player"
-                           onChange={(e) => setPlayer1(e.target.value)} value={player1} />
+                    <SearchBar setResults={setPlayer1} reuse={true}/>
                 </div>
                 <div>
-                    <input placeholder="Search a player"
-                           onChange={(e)=>setPlayer2(e.target.value)} value={player2} />
+                    <SearchBar setResults={setPlayer2} reuse={true} />
                 </div>
             </div>
             <div>
