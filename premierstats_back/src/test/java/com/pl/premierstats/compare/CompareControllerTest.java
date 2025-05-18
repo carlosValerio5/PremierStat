@@ -4,44 +4,55 @@ import com.pl.premierstats.player.PlayerCompareDTO;
 import com.pl.premierstats.team.TeamCompareDTO;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.List;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest
+@AutoConfigureMockMvc
 public class CompareControllerTest {
 
-    @LocalServerPort
-    private int port;
 
     @Autowired
-    private CompareController compareController;
+    private MockMvc mockMvc;
 
 
     @Test
     public void comparePlayerTest() throws Exception {
 
-        ResponseEntity<List<PlayerCompareDTO>> responseEntity = compareController.comparePlayer("Bukayo Saka", "Ivan Toney");
-        assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
+        mockMvc.perform(get("/api/v1/compare")
+                .param("player1", "Saka")
+                .param("player2", "Toney"))
+                .andExpect(status().isOk());
 
-        //Buk Saka should not exist
-        responseEntity = compareController.comparePlayer("Buk Saka", "Ivan Toney");
-        assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.NOT_FOUND);
+        //First player should not exist
+        mockMvc.perform(get("/api/v1/compare")
+                .param("player1", "fasdfasf")
+                .param("player2", "Ivan Toney"))
+                .andExpect(status().isNotFound());
     }
     @Test
     public void compareTeamTest() throws Exception {
 
-        ResponseEntity<List<TeamCompareDTO>> responseEntity = compareController.compareTeam("Brighton", "Arsenal");
-        assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
+        mockMvc.perform(get("/api/v1/compare")
+                        .param("team1", "Ars")
+                        .param("team2", "Tottenham"))
+                .andExpect(status().isOk());
 
-        responseEntity = compareController.compareTeam("Brighton", "Arsal");
-        assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.NOT_FOUND);
-
+        //First player should not exist
+        mockMvc.perform(get("/api/v1/compare")
+                        .param("team1", "fasdfasf")
+                        .param("team2", "Arsenal"))
+                .andExpect(status().isNotFound());
 
     }
 
