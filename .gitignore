@@ -23,4 +23,4 @@
 hs_err_pid*
 replay_pid*
 
-/premierstats_back/src/main/resources/application.properties
+**/application.properties
