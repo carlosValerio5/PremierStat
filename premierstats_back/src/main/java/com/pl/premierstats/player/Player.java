@@ -4,6 +4,13 @@ import jakarta.persistence.*;
 
 import java.util.Comparator;
 
+/**
+ * Clase que corresponde a la tabla <code>players_data</code> en la base de datos.
+ * <br/>
+ * Contiene toda la información acerca de jugadores.
+ * Cuenta con un campo <code>playMakerScore</code> que no se encuentra en la base de datos y se identifica con la
+ * anotación <code>Transient</code> para que JPA no lo tome en cuenta al mapear los campos de la clase.
+ */
 @Entity
 @Table(name="players_data", schema = "csvs")
 public class Player {

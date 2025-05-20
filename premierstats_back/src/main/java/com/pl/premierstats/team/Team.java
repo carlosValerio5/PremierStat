@@ -6,11 +6,13 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 /**
- * Teams class
- * each team has the same columns as a player but it'll be the total
- * of all the players stats corresponding to the team they belong to
- *
- * Columns like age will be an average for the team
+ * Clase Teams.
+ * <br/>
+ * Tiene los mismos atributos que la clase <code>Player</code>
+ * pero en la clase <code>Teams</code> estos valores serán los totales
+ * de las estadísticas de los jugadores que conforman al equipo.
+ * Algunos atributos como <code>age</code> serán promedios de las estadísticas
+ * presentes en los jugadores.
  */
 
 @Entity

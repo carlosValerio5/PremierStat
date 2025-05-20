@@ -1,10 +1,10 @@
 package com.pl.premierstats.team;
 
 /**
- * The TeamCompareDTO is a register type class which will include all
- * the data needed to compare teams.
- * This class will contain only data about the teams efficiency, general info and its stats per
- * 90 minutes.
+ * Data Transfer Object que contiene todos los datos necesarios para comparar equipos.
+ * <br/>
+ * Esta clase contiene tan solo datos de la eficiencia del equipo, información general
+ * y estadísticas por cada 90 minutos.
  */
 public record TeamCompareDTO(
 

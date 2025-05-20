@@ -4,8 +4,7 @@ import java.util.function.Function;
 
 
 /**
- * Mapper acts as a functional class
- * It will only contain one method which will convert from Team to TeamCompareDTO
+ * Mapper que actua como clase funcional para convertir de <code>Team</code> a <code>TeamCompareDTO</code>.
  */
 public class TeamCompareMapper implements Function<Team, TeamCompareDTO> {
 

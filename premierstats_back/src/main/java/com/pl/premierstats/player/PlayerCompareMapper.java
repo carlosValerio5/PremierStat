@@ -3,12 +3,22 @@ package com.pl.premierstats.player;
 import java.util.function.Function;
 
 /**
- * A mapper acts a function to convert from one object type to another
- *
- * In this case it converts a player object to a player compare object
- * It uses the Function class to implement the mapping
+ * Mapper que actúa como una función para convertir de Player a PlayerCompareDTO
+ * <br/>
+ * Implementa la interfaz Function la cual cuenta con el método apply que acepta un
+ * parámetro y produce un resultado.
  */
 public class PlayerCompareMapper implements Function<Player, PlayerCompareDTO> {
+    /**
+     *
+     * Convierte una instancia de la clase <code>Player</code> a una de la clase <code>PlayerCompareDTO</code>.
+     * <br/>
+     * Toma como parámetro una instancia de la clase Player y realiza todos los cálculos para
+     * popular los campos de la clase PlayerCompareDTO y así poder mostrar datos útiles para comparar dos jugadores.
+     *
+     * @param player Instancia de la clase Player
+     * @return <code>PlayerCompareDTO</code>
+     */
     @Override
     public PlayerCompareDTO apply(Player player) {
 

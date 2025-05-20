@@ -1,10 +1,11 @@
 package com.pl.premierstats.player;
 
 /**
- * Data Transfer Object for the comparison endpoint
+ * Data Transfer Object para el endpoint de comparación.
+ * <br/>
+ * Este patron de diseño es útil para mostrar datos diferentes en la misma respuesta, nos permite proporcionar
+ * diferentes vistas tomando como base los mismos datos.
  *
- * This design pattern is useful to show different data in the same response
- * it allows giving different views to the same data
  */
 public record PlayerCompareDTO(
 

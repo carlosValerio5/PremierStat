@@ -21,12 +21,30 @@ public class CompareService {
     private PlayerRepository playerRepository;
     private TeamRepository teamRepository;
 
+    /**
+     * Constructor para la clase <code>CompareService</code>, inyecta <code>playerRepository</code> y
+     * <code>teamRepository</code>.
+     *
+     * @param playerRepository
+     * @param teamRepository
+     */
     @Autowired
     public CompareService(PlayerRepository playerRepository, TeamRepository teamRepository) {
         this.playerRepository = playerRepository;
         this.teamRepository = teamRepository;
     }
 
+    /**
+     * Busca jugadores y los transforma a la clase tipo PlayerCompareDTO.
+     * <br/>
+     * Esta funcion recibe nombres de jugadores en forma de una lista e intenta recuperarlos
+     * de la base de datos. Si se encuentra un match para el jugador este será "mapeado", a
+     * la clase PlayerCompareDTO para solo regresar los datos necesarios para la comparación.
+     *
+     * @param playerNames
+     * @return <code>List&ltPlayerCompareDTO&gt</code>
+     * @throws PlayerNotFoundException Si los nombres proporcionados no coinciden con ningun jugador.
+     */
     public List<PlayerCompareDTO> comparePlayers(List<String> playerNames) throws PlayerNotFoundException{
 
         //list of comparable players
@@ -50,6 +68,17 @@ public class CompareService {
         return compareDTOs;
     }
 
+    /**
+     * Compara equipos y los mapea a la clase <code>TeamCompareDTO</code>.
+     * <br/>
+     *
+     * Busca a equipos que coincidan con los nombres proporcionados a la función.
+     * Si se encuentran coincidencias los objetos de la Clase <code>Team</code> se
+     * transforman a instancias de la clase <code>TeamCompareDTO</code>.
+     * @param teamNames
+     * @return <code>List&ltTeamCompareDTO&gt</code>
+     * @throws TeamNotFoundException Si no se encuentran coincidencias para los nombres proporcionados.
+     */
     public List<TeamCompareDTO> compareTeams(List<String> teamNames) throws TeamNotFoundException{
 
         //List of comparable teams

@@ -8,10 +8,11 @@ import java.time.LocalTime;
 
 
 /**
- * Matches is an entity that represents the games played in the 2023-2024 season
- * It is intended to add functionality so matches from other seasons can be added
+ * Entidad correspondiente a la tabla <code>matches</code> en el esquema <code>csvs</code>.<br/>
  *
- * Also match_id is currently just a primary key not a sequence but a sequence will be added in the future
+ * JPA mapea automáticamente esta clase a la tabla <code>matches</code> en la base de datos.<br/>
+ * Esta clase contiene toda la información acerca de partidos.<br/>
+ * La columna match_id corresponde a el atributo id. Esta columna representa la llave primaria de esta tabla.
  */
 @Entity
 @Table(name="matches", schema="csvs")
