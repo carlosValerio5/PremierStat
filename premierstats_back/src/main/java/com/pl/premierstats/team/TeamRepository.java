@@ -1,5 +1,6 @@
 package com.pl.premierstats.team;
 
+import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
@@ -9,6 +10,15 @@ import java.util.Optional;
  */
 public interface TeamRepository extends JpaRepository<Team, String> {
 
+    /**
+     * Borra un equipo por su nombre.
+     * <br/>
+     * Es una operacón transaccional, para asegurar la integridad de los datos.
+     *
+     * @param name String
+     */
+    @Transactional
+    void deleteByName(String name);
     /**
      * Encuentra un equipo por su nombre.
      * <br/>

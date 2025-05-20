@@ -1,16 +1,18 @@
 package com.pl.premierstats.playertest;
 
 import org.hamcrest.Matchers;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.MediaType;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 
 
 @AutoConfigureMockMvc
@@ -20,6 +22,11 @@ public class PlayerControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
+
+    @BeforeEach
+    void borrar() throws Exception {
+        mockMvc.perform(delete("/api/v1/player/prueba"));
+    }
 
     @Test
     public void topScorersTest() throws Exception {
@@ -73,6 +80,35 @@ public class PlayerControllerTest {
                 .param("nation", "MEX"))
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers.content().string(Matchers.containsString("Edson Álvarez")));
+    }
+
+    @Test
+    public void agregarPlayerTest() throws Exception {
+        mockMvc.perform(post("/api/v1/player")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("{\"name\":\"prueba\"}"))
+                .andExpect(MockMvcResultMatchers.status().isCreated());
+
+        mockMvc.perform(delete("/api/v1/player/prueba"))
+                .andExpect(MockMvcResultMatchers.status().isOk());
+
+    }
+
+    @Test
+    public void getPlayerTest() throws Exception {
+        mockMvc.perform(put("/api/v1/player")
+                .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"name\":\"prueba\"}"))
+                .andExpect(MockMvcResultMatchers.status().isNotFound());
+
+        mockMvc.perform(post("/api/v1/player")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("{\"name\":\"prueba\"}")
+        ).andExpect(MockMvcResultMatchers.status().isCreated());
+
+        mockMvc.perform(delete("/api/v1/player/prueba"))
+                .andExpect(MockMvcResultMatchers.status().isOk());
+
     }
 
 }
