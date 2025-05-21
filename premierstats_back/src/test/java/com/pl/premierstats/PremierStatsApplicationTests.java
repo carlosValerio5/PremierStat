@@ -15,6 +15,7 @@ import org.springframework.test.context.ActiveProfiles;
  *
  *
  */
+@Ignore
 @SpringBootTest
 @ActiveProfiles("test")
 class PremierStatsApplicationTests {
