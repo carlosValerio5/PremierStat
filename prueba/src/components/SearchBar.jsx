@@ -11,12 +11,13 @@ const SearchBar = ({setResults, reuse}) => {
             return;
         }
         if(!reuse){
-            fetch(`${import.meta.env.VITE_API_URL}/api/v1/player?name=${value}`)
-                .then(res => res.json())
-                .then(data => {
-                    setResults(data);
-                })
-                .catch(error => console.log(error));
+            try {
+                const response = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/player?name=${value}`);
+                const data = await response.json();
+                setResults(data);
+            }catch(err){
+                console.log(err);
+            }
         }
         else{
             setResults(value);

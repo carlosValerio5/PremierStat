@@ -19,10 +19,13 @@ const Players = () => {
 
     useEffect(() => {
         const getPlayers = async () => {
-            const response = await fetch(`${API_URL}`, {})
-                .then(response => response.json())
-                .then(data => setPlayers(data))
-                .catch(err => console.log(err));
+            try{
+                const response = await fetch(API_URL);
+                const json = await response.json();
+                setPlayers(json)
+            }catch(e){
+                console.log(e)
+            }
         };
 
         getPlayers();
