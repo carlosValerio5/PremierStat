@@ -13,7 +13,7 @@ const PlayerDashboard = () => {
     useEffect(() => {
         const fetchPlayer = async () => {
             try {
-                const response = await fetch(`http://localhost:8080/api/v1/player?name=${name}`);
+                const response = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/player?name=${name}`);
                 const data = await response.json();
                 console.log(data);
                 setPlayer(data[0]); // assuming the API returns an array

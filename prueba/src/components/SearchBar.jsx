@@ -11,7 +11,7 @@ const SearchBar = ({setResults, reuse}) => {
             return;
         }
         if(!reuse){
-            fetch(`http://localhost:8080/api/v1/player?name=${value}`)
+            fetch(`${import.meta.env.VITE_API_URL}/api/v1/player?name=${value}`)
                 .then(res => res.json())
                 .then(data => {
                     setResults(data);

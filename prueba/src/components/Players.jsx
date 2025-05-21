@@ -14,8 +14,8 @@ const Players = () => {
     const [ results, setResults ] = useState([]);
 
 
-    const API_URL = (name) ? `http://localhost:8080/api/v1/player?name=${name}`
-        : "http://localhost:8080/api/v1/player";
+    const API_URL = (name) ? `${import.meta.env.VITE_API_URL}/api/v1/player?name=${name}`
+        : `${import.meta.env.VITE_API_URL}/api/v1/player`;
 
     useEffect(() => {
         const getPlayers = async () => {
@@ -39,13 +39,6 @@ const Players = () => {
                 <TopScorers />
                 <TopPlayMakers />
             </div>
-            {/*}
-            {players.map((player, index) => (
-                <div key={index} className="player">
-                    <ul>{player.name}</ul>
-                </div>
-            ))}
-            {*/}
         </div>
     )
 }

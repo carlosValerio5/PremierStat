@@ -52,7 +52,7 @@ const TopScorers = () => {
     useEffect(() => {
         const fetchPlayer = async () => {
             try {
-                const response = await fetch(`http://localhost:8080/api/v1/player/top-scorers`);
+                const response = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/player/top-scorers`);
                 const data = await response.json();
                 setResults(data); // assuming the API returns an array
             } catch (err) {

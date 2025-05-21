@@ -6,8 +6,8 @@ function Teams() {
     const [teams, setTeams] = useState([]);
     const { name } = useParams();
 
-    const API_URL = (name)? `http://localhost:8080/api/v1/team?name=${name}`
-        : `http://localhost:8080/api/v1/team`;
+    const API_URL = (name)? `${import.meta.env.VITE_API_URL}/api/v1/team?name=${name}`
+        : `${import.meta.env.VITE_API_URL}/api/v1/team`;
 
     useEffect(() => {
         const fetchTeams = async () => {
