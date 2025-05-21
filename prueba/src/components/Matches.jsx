@@ -8,11 +8,14 @@ const Matches = () => {
     const [matches, setMatches] = useState([]);
 
     const fetchMatches = async (pattern="") => {
-        const response = await fetch(`${API_URL}${pattern}`)
-            .then((res) => res.json())
-            .then((data) => setMatches(data))
-            .catch((err) => console.error(err));
-
+        try{
+            const response = await fetch(`${API_URL}${pattern}`)
+            const data = await response.json();
+            console.log(data);
+            setMatches(data);
+        }catch(e){
+            console.log(e)
+        }
     }
 
     useEffect(() => {

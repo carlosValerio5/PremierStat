@@ -24,6 +24,7 @@ public class Match {
     private Integer wk;
     private String day;
     private LocalDate date;
+    @Column(name="time_match")
     private LocalTime time;
     private String home;
     private Double xg_home;
