@@ -60,11 +60,14 @@ CREATE TABLE csvs.matches(
     result TEXT
 );
 
-\COPY csvs.players_data(name, Nation, Pos, Age, MP, Starts, Min, ninetys, Gls, Ast, PK, CrdY, CrdR, xG, npxG, xAG, PrgC, PrgP, Team) FROM '/home/carlitos/PremierStat/DataScraping/players.csv' DELIMITER ',' HEADER CSV;
+\cd :scriptdir
+\cd ../DataScraping
 
-\COPY csvs.teams_data(name,Age,MP,Starts,Min,ninetys,Gls,Ast,PK,CrdY,CrdR,xG,npxG,xAG,PrgC,PrgP) FROM '/home/carlitos/PremierStat/DataScraping/teams.csv' DELIMITER ',' HEADER CSV;
+\COPY csvs.players_data(name, Nation, Pos, Age, MP, Starts, Min, ninetys, Gls, Ast, PK, CrdY, CrdR, xG, npxG, xAG, PrgC, PrgP, Team) FROM 'players.csv' DELIMITER ',' HEADER CSV;
 
-\COPY csvs.matches(match_id, wk, day, date, time_match, home, xg_home, score, xg_away, away, attendance, venue, referee, result) FROM '/home/carlitos/PremierStat/DataScraping/matches_cleaned.csv' DELIMITER ',' HEADER CSV;
+\COPY csvs.teams_data(name,Age,MP,Starts,Min,ninetys,Gls,Ast,PK,CrdY,CrdR,xG,npxG,xAG,PrgC,PrgP) FROM 'teams.csv' DELIMITER ',' HEADER CSV;
+
+\COPY csvs.matches(match_id, wk, day, date, time_match, home, xg_home, score, xg_away, away, attendance, venue, referee, result) FROM 'matches_cleaned.csv' DELIMITER ',' HEADER CSV;
 
 --altering squads column types
 --testing function to alter data types
