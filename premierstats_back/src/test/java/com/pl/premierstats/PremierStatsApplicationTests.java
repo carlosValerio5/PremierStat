@@ -2,6 +2,7 @@ package com.pl.premierstats;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.Profile;
 import org.springframework.test.context.ActiveProfiles;
 
 /**
@@ -15,8 +16,8 @@ import org.springframework.test.context.ActiveProfiles;
  *
  *
  */
-@Ignore
 @SpringBootTest
+@Profile("!production")
 @ActiveProfiles("test")
 class PremierStatsApplicationTests {
 
