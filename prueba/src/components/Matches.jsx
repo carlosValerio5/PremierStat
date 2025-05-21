@@ -11,8 +11,12 @@ const Matches = () => {
         try{
             const response = await fetch(`${API_URL}${pattern}`)
             const data = await response.json();
-            console.log(data);
-            setMatches(data);
+            if(Array.isArray(data)) {
+                setMatches(data);
+            }else{
+                console.error("Error fetching match data.");
+                setMatches([]);
+            }
         }catch(e){
             console.log(e)
         }

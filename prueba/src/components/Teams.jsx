@@ -11,10 +11,18 @@ function Teams() {
 
     useEffect(() => {
         const fetchTeams = async () => {
-            const response = await fetch(`${API_URL}`, {})
-                .then(res => res.json())
-                .then(data => setTeams(data))
-                .catch(err => console.log(err));
+            try{
+                const response = await fetch(`${API_URL}`, {})
+                const data = await response.json();
+                if(Array.isArray(data)) {
+                    setTeams(data);
+                }else{
+                    console.error("Error fetching teams from API");
+                    setTeams([]);
+                }
+            }catch(err){
+                console.error("Error fetching teams from API");
+            }
         };
 
         fetchTeams();

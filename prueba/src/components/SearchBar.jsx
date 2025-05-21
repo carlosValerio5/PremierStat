@@ -14,7 +14,12 @@ const SearchBar = ({setResults, reuse}) => {
             try {
                 const response = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/player?name=${value}`);
                 const data = await response.json();
-                setResults(data);
+                if(Array.isArray(data)){
+                    setResults(data);
+                }
+                else {
+                    setResults([]);
+                }
             }catch(err){
                 console.log(err);
             }

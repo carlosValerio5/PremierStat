@@ -16,7 +16,12 @@ const PlayerDashboard = () => {
                 const response = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/player?name=${name}`);
                 const data = await response.json();
                 console.log(data);
-                setPlayer(data[0]); // assuming the API returns an array
+                if(Array.isArray(data)) {
+                    setPlayer(data[0]); // assuming the API returns an array
+                }else{
+                    console.error("Error fetching player dashboard. Data is not array.");
+                    setPlayer(null);
+                }
             } catch (err) {
                 setError("Failed to fetch player data.");
             } finally {
@@ -34,6 +39,8 @@ const PlayerDashboard = () => {
     },[player]);
 
     const clasifyPlayer = (player) => {
+        if (!player) return null;
+
         const position = player.pos;
         if(position.includes("GK")){
             return "N/A";

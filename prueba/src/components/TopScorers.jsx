@@ -54,7 +54,14 @@ const TopScorers = () => {
             try {
                 const response = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/player/top-scorers`);
                 const data = await response.json();
-                setResults(data); // assuming the API returns an array
+
+                if(Array.isArray(data)) {
+                    setResults(data);
+                }else {
+                    setError("Failed to fetch player data");
+                    setResults([]);
+                }
+                // assuming the API returns an array
             } catch (err) {
                 setError("Failed to fetch player data.");
             } finally {
@@ -74,7 +81,9 @@ const TopScorers = () => {
         padding: 0.2,
     });
 
-    const yValues = results.map(getYValue).filter(value => typeof value === "number");
+    const yValues = (Array.isArray(results)) ?
+        results.map(getYValue).filter(value => typeof value === "number")
+        : null;
 
     const yScale = scaleLinear({
         range: [innerHeight, margin],
@@ -92,7 +101,7 @@ const TopScorers = () => {
                 Top Scorers
             </h1>
             <div className="mx-auto grid sm:grid-cols-2 gap-y-2 gap-x-20">
-                {results.map((player, index) => (
+                {Array.isArray(results) ? results.map((player, index) => (
                     <div key={index} className="w-full mx-auto p-6 bg-neutral-600/50 rounded-xl shadow-md mt-6 text-white
                     outline-orange-400/80 outline-4">
                         <h1 className="text-2xl font-bold mb-4">{player.name}</h1>
@@ -111,7 +120,8 @@ const TopScorers = () => {
                             </div>
                         </div>
                     </div>
-                ))}
+                ))
+                : null}
             </div>
             <div className="w-full overflow-x-auto relative">
                 <svg
@@ -119,7 +129,7 @@ const TopScorers = () => {
                 className="w-full h-[300px] sm:h-[400px] md:h-[500px]"
                 >
                     <Group>
-                        {results.map((player, index) => {
+                        {Array.isArray(results) ? results.map((player, index) => {
                             const xValue = getXValue(player);
                             const barWidth = xScale.bandwidth();
                             const barHeight = innerHeight - (yScale(getYValue(player)) ?? 0);
@@ -148,7 +158,7 @@ const TopScorers = () => {
                                     onMouseLeave={() => hideTooltip()}
                                 />
                             );
-                        })}
+                        }) : null}
 
 
                     </Group>

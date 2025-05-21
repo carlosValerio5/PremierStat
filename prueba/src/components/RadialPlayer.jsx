@@ -74,6 +74,8 @@ const clampZscore= (value, min=-10, max=10) => {
 }
 
 const RadialPlayer = ({player, levels = 5, margin = defaultMargin }) => {
+    if (!player) return null;
+
     const [ref, bounds] = useMeasure();
 
     const width = bounds.width || defaultWidth;

@@ -43,7 +43,12 @@ const TopPlayMakers = ({
             try{
                 const response = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/player/top-playmakers`)
                 const data = await response.json();
-                setPlayMakers(data)
+                if (Array.isArray(data)) {
+                    setPlayMakers(data)
+                }else{
+                    setError("Failed to fetch playMakers data");
+                    setPlayMakers([]);
+                }
             }catch(error){
                 setError("Failed to fetch data");
             }finally {
@@ -62,12 +67,12 @@ const TopPlayMakers = ({
 
 
 
-    const normalizedPlayMakers = playMakers.map((d) => ({
+    const normalizedPlayMakers = (Array.isArray(playMakers)) ? playMakers.map((d) => ({
         ...d,
         xag: parseFloat(d.zXag) || 0,
         ast: parseFloat(d.zAssists) || 0,
         prgp: parseFloat(d.zProgressivePasses) || 0,
-    }));
+    })) : null;
 
 
     const scoreScale = scaleLinear({

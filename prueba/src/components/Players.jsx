@@ -22,7 +22,12 @@ const Players = () => {
             try{
                 const response = await fetch(API_URL);
                 const json = await response.json();
-                setPlayers(json)
+                if (Array.isArray(json)) {
+                    setPlayers(json);
+                }else{
+                    console.error("Error fetching players. Data is not array.");
+                    setPlayers([]);
+                }
             }catch(e){
                 console.log(e)
             }

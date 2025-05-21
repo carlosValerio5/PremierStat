@@ -55,7 +55,11 @@ const PlayerCompare = () => {
             }
 
             const data = await response.json();
-            if(data) setPlayerData(data);
+            if(Array.isArray(data)){
+                setPlayerData(data);
+            }else{
+                setPlayerData([]);
+            }
         }catch(e){
             console.error(e);
         }
